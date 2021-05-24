@@ -1,0 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "main";
+
+// dev
+@import
+  "minima/skins/{{ site.skin | default: 'classic' }}";
+  // "minima/initialize";
+// dev end

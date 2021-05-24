@@ -1,0 +1,67 @@
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null) {
+  object-fit: $fit;
+  @if $position {
+    font-family: "object-fit: #{$fit}; object-position: #{$position}";
+    object-position: $position;
+  } @else {
+    font-family: "object-fit: #{$fit}";
+  }
+}
+
+// Calculate responsive font size
+@mixin fluid($min-vw, $max-vw, $min-size, $max-size, $prop: "font-size", $important: true) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-size);
+  $u4: unit($max-size);
+  $suffix: if($important, "!important", "");
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      #{$prop}: $min-size #{$suffix};
+      @media screen and (min-width: $min-vw) {
+         #{$prop}: calc(
+          #{$min-size} + #{strip-unit($max-size - $min-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        ) #{$suffix};
+      }
+      @media screen and (min-width: $max-vw) {
+         #{$prop}: $max-size #{$suffix};
+      }
+    }
+  }
+}
+
+// Aspect-ratio variants
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  & > video,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin font-weight($weight: 400) {
+  font-weight: $weight !important;
+}

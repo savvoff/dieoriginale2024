@@ -1,0 +1,30 @@
+.home {
+  position: relative;
+  padding: $spacer * 3 0;
+  @include md(padding, $spacer * 2 0);
+  .row {
+    justify-content: center;
+  }
+  &-slogan {
+    position: absolute;
+    top: -$spacer * 4;
+    right: $offset_one_side;
+    @include md(top, -$spacer * 2.5);
+    @include md(max-width, 150px);
+  }
+  &__title {
+    text-transform: uppercase;
+  }
+  &__desc {
+    margin: $spacer 0;
+    @include row-flex();
+    &-inner {
+      display: flex;
+      flex-wrap: nowrap;
+      @include md(flex-wrap, wrap);
+      h2 {
+        margin-right: $spacer/2;
+      }
+    }
+  }
+}

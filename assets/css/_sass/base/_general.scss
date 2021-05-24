@@ -1,0 +1,148 @@
+$breakpoints: (
+  sm: $break_sm,
+  md: $break_md,
+  lg: $break_lg, 
+  xl: $break_xl, 
+  ) !default;
+
+// ============
+// dev
+.debug {
+  border: $border-width solid green;
+  background-color: red;
+}
+// dev
+@include reset();
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: $font-family-base;
+  @include fluid($vw-576, $vw-1200, $font-size-base, rem-calc(18px));
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left;
+  background-color: $body-bg;
+}
+
+a:not([href^='#']) {
+  color: $secondary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  color: $white;
+  background: $secondary;
+}
+
+// Scroll
+::-webkit-scrollbar {
+  width: 7px;
+  height: 1px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  background-color: darken($secondary, 15%);
+}
+
+::-webkit-scrollbar-track {
+  background-color: darken($secondary, 15%);
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: $gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  height: $spacer * 3;
+  border-radius: $border-radius-sm;
+  background-color: darken($secondary, 15%);
+}
+::-webkit-scrollbar-corner {
+  background-color: darken($secondary, 15%);
+}
+
+.page {
+  &-content {
+    position: relative;
+    flex: 1 0 auto;
+  }
+}
+
+.container {
+  position: relative;
+  @include wrapper();
+  &-fluid {
+    @include wrapper-full();
+  }
+}
+
+.row {
+  @include row-flex();
+}
+
+.col {
+  @include col();
+  &-auto {
+    margin: 0 auto;
+  }
+}
+
+@if $columns > 0 {
+  @for $i from 1 through $columns {
+    // Allow columns to stretch full width below their breakpoints
+    .col-#{$i} {
+      @include col();
+      @include size($i);
+    }
+  }  
+} 
+@each $breakpoint, $size in $breakpoints {
+  $infix: breakpoint-infix($breakpoint, $breakpoints);
+  @if $columns > 0 {
+    @for $i from 1 through $columns {
+      .col#{$infix}-#{$i} {
+        @include col();
+        $val: 100% / $columns * $i;
+        @media screen and (min-width: $size){
+          width: #{calc(#{$val} - #{$offset})};
+        }
+      }
+    }  
+  }    
+}
+
+.img-fit {
+  & > img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include object-fit(cover);
+  }
+  &_top {
+    @extend .img-fit;
+    & > img {
+      @include object-fit(cover, top);
+    }
+  }
+  &_bot {
+    @extend .img-fit;
+    & > img {
+      @include object-fit(cover, bottom);
+    }
+  }
+  &_contain {
+    @extend .img-fit;
+    & > img {
+      @include object-fit(contain);
+    }
+  }
+}
