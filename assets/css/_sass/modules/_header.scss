@@ -59,7 +59,7 @@
     &-item {
       &.current {
         a {
-          text-decoration: underline;
+          color: $black;
         }
       }
       &:first-child { 
@@ -75,7 +75,7 @@
         padding: 0 $nav-link-padding-x;
         @extend .h4;
         margin: 0;
-        font-weight: $font-weight-base;
+        font-weight: $font-weight-bold;
         @include lg(padding, $nav-link-padding-y $nav-link-padding-x);
       }
     }

@@ -1,0 +1,9 @@
+.post {
+  position: relative;
+  padding: $spacer * 3 0;
+  @include md(padding, $spacer * 2 0);
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
