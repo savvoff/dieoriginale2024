@@ -1,0 +1,10 @@
+@import url("https://cdn.jsdelivr.net/npm/luminous-lightbox@latest/dist/luminous-basic.min.css");
+.lum-lightbox {
+  z-index: 9999;
+  .lum-gallery-button {
+    &:after {
+      border-color: $light;
+      box-shadow: none;
+    }
+  }
+}

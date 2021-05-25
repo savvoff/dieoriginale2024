@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css");
+.slider {
+  position: relative;
+  &-home {    
+    padding: $spacer * 2 0;
+    @include row-ib();
+    min-height: 560px;
+    .splide__track {
+      height: 100%;
+      border: $border-width solid $border-color;
+    }
+    .splide__list { 
+      height: 100%;
+    }
+    .splide__slide { 
+      &:before, &:after {
+        pointer-events: none;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($secondary, 0.8);
+        transform-origin: bottom;
+        transform: scale(0);
+        transition: 0.5s $ease-out-cubic;
+      }
+      &:hover {
+        &:before {
+          transform: scale(1);
+        }
+        &:after {
+          transform: translate3d(0, -50%, 0);
+          opacity: 1;
+        }
+      }
+      &:after {
+        content: attr(data-text);
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        transform: translate3d(0, -25%, 0);
+        transition: opacity 0.2s $ease-out-cubic, 0.5s $ease-out-cubic;
+        opacity: 0;
+      }
+    }
+    .splide__arrow {
+      width: rem-calc(50px);
+      height: rem-calc(50px);
+      background-color: $white;
+      border: $border-width solid $secondary;
+      @include md(width, rem-calc(35px));
+      @include md(height, rem-calc(35px));
+      svg {
+        fill: $secondary;
+      }
+    }
+  }
+}
