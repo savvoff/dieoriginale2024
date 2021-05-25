@@ -7,8 +7,8 @@
 // base
 @import "./base/fonts";
 @import "./base/grid";
-@import "./base/type";
 @import "./base/general";
+@import "./base/type";
 
 // vendor
 @import "./vendor/splide";
@@ -17,5 +17,6 @@
 // modules
 @import "./modules/header";
 @import "./modules/footer";
+@import "./modules/accordion";
 @import "./modules/post";
 @import "./modules/home";

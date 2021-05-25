@@ -146,3 +146,18 @@ a:not([href^='#']) {
     }
   }
 }
+
+.ratio {
+  &-1x1 {
+    @include aspect-ratio(1, 1);
+  }
+  &-4x3 {
+    @include aspect-ratio(4, 3);
+  }
+  &-11x4 {
+    @include aspect-ratio(11, 4);
+  }
+  &-16x9 {
+    @include aspect-ratio(16, 9);
+  }
+}

@@ -11,7 +11,7 @@ $gray-200: #e5e5e5 !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #979797 !default;
-$gray-600: #7c7c7c !default;
+$gray-600: #878787 !default;
 $gray-700: #495057 !default;
 $gray-800: #363636 !default;
 $gray-900: #0d0d0d !default;
@@ -29,6 +29,7 @@ $purple: #8900ff !default;
 $primary: $black; 
 $secondary: $purple;
 $light: $gray-100 !default;
+$dark: $gray-600 !default;
 
 $body-bg: $white;
 $body-color: $primary !default;
@@ -97,8 +98,8 @@ $h5-font-size: strip-unit($font-size-base) * rem-calc(18px)  !default;
 $h6-font-size: $font-size-base !default;
 
 $headings-font-family: $font-family-sans-serif !default;
-$headings-margin-bottom: $spacer !default;
-$headings-font-weight: 700 !default;
+$headings-margin-bottom: $spacer / 2 !default;
+$headings-font-weight: $font-weight-normal !default;
 $headings-color: $primary !default;
 $headings-line-height: $line-height-sm !default;
 

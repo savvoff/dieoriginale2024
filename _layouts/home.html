@@ -1,65 +1,6 @@
 ---
 layout: default
 ---
-
-<!-- <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
-</div> -->
-
 <section class="home">
   <div class="container">
     <img class="home-slogan" src="{{ "/assets/images/slogan.png" | relative_url }}" alt="no copies">
@@ -76,38 +17,13 @@ layout: default
         </div>
       </div>  
       <div class="col-12">
-        <div class="splide slider-home" data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": false}'>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide" data-text="Bad Goisern">
-                <a class="img-fit" href="{{ "/assets/images/Bad-Goisern.jpg" | relative_url }}" data-zoom-gallery>
-                  <img src="{{ "/assets/images/Bad-Goisern.jpg" | relative_url }}" alt="Bad Goisern">
-                </a>
-              </li> 
-              <li class="splide__slide" data-text="SADoG Resultat">
-                <a class="img-fit" href="{{ "/assets/images/SADoG-Resultat.jpg" | relative_url }}" data-zoom-gallery>
-                  <img src="{{ "/assets/images/SADoG-Resultat.jpg" | relative_url }}" alt="SADoG-Resultat">
-                </a>
-              </li> 
-              <li class="splide__slide" data-text="Artculture">
-                <a class="img-fit" href="{{ "/assets/images/artculture.jpg" | relative_url }}" data-zoom-gallery>
-                  <img src="{{ "/assets/images/artculture.jpg" | relative_url }}" alt="artculture">
-                </a>
-              </li> 
-              <li class="splide__slide" data-text="Fotostrecke 'Making of'">
-                <a class="img-fit" href="{{ "/assets/images/Making_of.jpg" | relative_url }}" data-zoom-gallery>
-                  <img src="{{ "/assets/images/Making_of.jpg" | relative_url }}" alt="Making of">
-                </a>
-              </li> 
-              <li class="splide__slide" data-text="Saboteur">
-                <a class="img-fit" href="{{ "/assets/images/saboteur.jpg" | relative_url }}" data-zoom-gallery>
-                  <img src="{{ "/assets/images/saboteur.jpg" | relative_url }}" alt="saboteur">
-                </a>
-              </li> 
-            </ul>
-          </div>
-        </div>
+        {%- include slider.html -%}
       </div>    
+      <div class="col-12">
+        <article>
+          {{ content }}
+        </article>
+      </div>
     </div>
   </div>
 </section>

@@ -20,6 +20,22 @@
         new Splide(el).mount();
       });
     }
+    
+    function accordionMenus() {
+      var acc = document.querySelectorAll(".accordion");
+
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("is-active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    }
 
     function lightBoxInit() {
       document.querySelectorAll("[data-zoom]").forEach(function (el) {
@@ -45,6 +61,7 @@
       sliderInit();
       lightBoxInit();
       menuToggle();
+      accordionMenus();
     }
   }
   new App();

@@ -1,0 +1,39 @@
+.accordion {
+  margin: 0;
+  margin-top: -$border-width;
+  padding: $spacer;
+  border: {
+    top: $border-width solid $dark;
+    bottom: $border-width solid $dark;
+    left: 0;
+    right: 0;
+  }
+  text-transform: uppercase;
+  color: $secondary; 
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  strong {
+    &:after {
+      position: relative;
+      left: $spacer / 2;
+      font-family: "Material Icons";
+      content: "\e145";
+      vertical-align: bottom;
+    }
+  }
+  &.is-active {
+    strong {
+      &:after {
+        content: "\e15b";
+      }
+    }
+  }
+  &-content {
+    margin-bottom: 0!important;
+    padding: 0 $spacer;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s $ease-out-cubic;
+  }
+}

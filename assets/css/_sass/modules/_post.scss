@@ -2,8 +2,78 @@
   position: relative;
   padding: $spacer * 3 0;
   @include md(padding, $spacer * 2 0);
+  .row {
+    justify-content: center;
+  }
   &__title {
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: $spacer * 3;
+    @include md(margin-bottom, $spacer * 2);
+  }
+  article {
+    p, div {
+      max-width: 100%;
+      @include clearfix();
+      margin-bottom: $spacer;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      text-transform: uppercase;
+      span {
+        color: $secondary;
+      }
+    }
+    figure {
+      margin: 0 $spacer * 2 $spacer;
+      background-color: $light;
+      @include sm(margin, auto);
+      & > img {
+        position: absolute;
+      }
+    }
+    .is {
+      &-small {
+        width: 100%;
+        max-width: 200px;
+      }
+      &-medium {
+        width: 100%;
+        max-width: 300px;
+      }
+      &-big {
+        width: 100%;
+        max-width: 400px;
+      }
+      &-full {
+        width: 100%;
+        max-width: 100%;
+      }
+      &-float {
+        &-left {
+          @include from($break_sm) {
+            float: left;
+            margin-left: 0;
+          }
+        }
+        &-right {
+          @include from($break_sm) {
+            float: right;
+            margin-right: 0;
+          }          
+        }
+      }
+      &-light {
+        color: $light;
+        &_bg {
+          background-color: $light;
+        }
+      }
+      &-dark {
+        color: $dark;
+        &-bg {
+          background-color: $dark;
+        }
+      }
+    }
   }
 }
