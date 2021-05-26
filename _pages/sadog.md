@@ -6,7 +6,7 @@ order: 1
 ---
 <div align="center">
   <div class="col-12 col-lg-10 col-xl-8">
-    <h2><span>Identität</span></h2>
+    <h2 class="post__subtitle"><span>Identität</span></h2>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/visierlogo-ohne.png" | relative_url }}" alt="visierlogo ohne">
     <br> <br>
@@ -22,7 +22,7 @@ order: 1
       Satirische Begleiterscheinung zum Verständnis für Kunst in der Kulturhauptstadt Europas 2024
     </p>  
     <br> 
-    <div>
+    <div align="left">
       <figure class="img-fit img-fit_contain ratio-1x1 is-medium is-float-left">
         <img src="{{ "/assets/images/Ebene.png" | relative_url }}" alt="Ebene">
       </figure>
@@ -42,7 +42,7 @@ order: 1
 <div class="is-light_bg" align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <br> <br>  
-    <h2><span>Entstehung</span></h2>
+    <h2 class="post__subtitle"><span>Entstehung</span></h2>
     <br><br>
     <h4><strong>Die INITIALZÜNDUNG</strong></h4>
     <p>war ein Aufruf in der „Ischler Woche" Ausgabe 941: <span class="is-dark">„Und wir sollten uns, beispielsweise im Rahmen der Info-Tour, erkundigen Hingehen, fragen, Meinung sagen! Auch wenn es eine unbequeme ist.„</span></p>
@@ -74,7 +74,7 @@ order: 1
 <div align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <br> <br>
-    <h2><span>Qualifikation(en)</span></h2>
+    <h2 class="post__subtitle"><span>Qualifikation(en)</span></h2>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/palitra.png" | relative_url }}" alt="palitra">
     <br> <br>
@@ -101,7 +101,7 @@ order: 1
 <div class="is-light_bg" align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <br> <br>
-    <h2><span>Auftrag</span></h2>
+    <h2 class="post__subtitle"><span>Auftrag</span></h2>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/visierlogo.png" | relative_url }}" alt="visierlogo">
     <br> <br>
@@ -128,7 +128,7 @@ order: 1
 <div align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <br> <br>
-    <h2><span>Ziel</span></h2>
+    <h2 class="post__subtitle"><span>Ziel</span></h2>
     <br> <br>
     <h5><strong>GEGENKULTURELLE EINFLUSSNAHME</strong></h5>
     <p>
@@ -160,7 +160,7 @@ order: 1
 <div class="is-light_bg" align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <br> <br>
-    <h2><span>Hilf(€)</span></h2>
+    <h2 class="post__subtitle"><span>Hilf(€)</span></h2>
     <br>
     <h3><strong>Kunst kaufen</strong></h3>
     <p>Zur Serie <a href="http://" target="_blank" rel="noopener noreferrer">„Artculture Provincial"</a> gibt es eine unbestimmte Anzahl an Motiven in einer limitierten Anzahl von Kunstdrucken zu erwerben. Von stets 30 Exemplaren werden jeweils 24 Stk. käuflich erhältlich sein und nach Abverkauf dieser, 3 weitere Exemplare je Auflage noch für einem guten Zweck gestiftet.

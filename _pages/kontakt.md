@@ -4,14 +4,7 @@ title: KONTAKT
 permalink: /kontakt/
 order: 5
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization]
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization]
+<div class="col-12 col-lg-10 col-xl-8">
 
 
-[jekyll-organization]: https://github.com/jekyll
+</div>

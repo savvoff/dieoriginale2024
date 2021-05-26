@@ -23,16 +23,21 @@
     
     function accordionMenus() {
       var acc = document.querySelectorAll(".accordion");
-
+      var toggler = function(el) {
+        var panel = el.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      }
       for (var i = 0; i < acc.length; i++) {
+        if (acc[i].classList.contains("is-active")) {
+          toggler(acc[i]);
+        }
         acc[i].addEventListener("click", function() {
           this.classList.toggle("is-active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
+          toggler(this);
         });
       }
     }
