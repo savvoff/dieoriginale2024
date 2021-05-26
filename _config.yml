@@ -74,5 +74,5 @@ sass:
 
 # Multilang
 languages: ["de", "en"]
-exclude_from_localizations: ["assets", "script"]
+exclude_from_localizations: ["assets", "script", "favicon.png"]
 default_locale_in_subfolder: false
