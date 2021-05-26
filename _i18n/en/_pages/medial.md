@@ -1,15 +1,3 @@
----
-layout: page
-title: titles.medial
-namespace: medial
-permalink: /medial/
-permalink_en: /middle/
-languages: ["en"]
-order: 2
----
-{%- if site.lang != site.languages[0] -%}
-  {% tf _pages/medial.md %}
-{%- else -%}
 <div align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <h2 class="post__subtitle"><span>Die Macht der Bilder</span></h2>
@@ -98,4 +86,3 @@ order: 2
   </div>
   <br> <br> <br>
 </div>
-{%- endif -%}

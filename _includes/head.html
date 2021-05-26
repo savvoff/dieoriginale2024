@@ -5,7 +5,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="{{ site.color | default: "#fff" }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {%- seo -%}
+  {%- capture subpage -%}{% t page.title %}{%- endcapture -%}
+
+  <title>{% if subpage != "" %}{{ subpage | append: " - " }}{% endif %}{{ site.title }}</title>
+
+  {%- seo title = false -%}
 
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}

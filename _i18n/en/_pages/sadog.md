@@ -1,15 +1,3 @@
----
-layout: page
-title: titles.sadog
-namespace: sadog
-permalink: /dr-sadog/
-permalink_en: /dr-sadog/
-languages: ["en"]
-order: 1
----
-{%- if site.lang != site.languages[0] -%}
-  {% tf _pages/sadog.md %}
-{%- else -%}
 <div align="center">
   <div class="col-12 col-lg-10 col-xl-8">
     <h2 class="post__subtitle"><span>Identität</span></h2>
@@ -207,4 +195,3 @@ order: 1
   </div>
   <br> <br>
 </div>
-{%- endif -%}

@@ -1,0 +1,13 @@
+global:
+  legal: Impressum
+
+langs:
+  de: Deutsche 
+  en: Englisch 
+
+titles:
+  aktiv: AKTIV
+  diagnose: DIAGNOSE
+  kontakt: KONTAKT
+  medial: MEDIAL
+  sadog: Dr.SADoG
