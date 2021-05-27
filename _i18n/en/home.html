@@ -1,9 +1,3 @@
----
-layout: default
----
-{%- if site.lang != site.languages[0] -%}
-  {% tf home.html %}
-{%- else -%}
 <section class="home">
   <div class="container">
     <img class="home-slogan" src="{{ "/assets/images/slogan.png" | relative_url }}" alt="no copies">
@@ -15,7 +9,7 @@ layout: default
         <div class="home__desc">
           <div class="home__desc-inner col-12 col-md-6">
             <h2>SADoG</h2>
-            <h4>„KRAFT DER GEGENKULTUR“ Satirische Begleiterscheinung zum Verständnis für Kunst in der Kulturhauptstadt Europas</h4>
+            <h4>„KRAFT DER GEGENKULTUR“ Satirical accompaniment to understanding art in the European Capital of Culture</h4>
           </div>
         </div>
       </div>  
@@ -30,4 +24,3 @@ layout: default
     </div>
   </div>
 </section>
-{%- endif -%}
