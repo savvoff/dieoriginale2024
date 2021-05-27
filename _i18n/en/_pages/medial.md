@@ -5,7 +5,7 @@
     <h3>artculture provincial (Das ist Kunst)</h3>
     <p>"Artculture Provincial“ zur Förderung der Gegenkultur in Europas Kulturhauptstadt. Satirische Begleiterscheinung zum aktuellen Verständnis für Kunst im Salzkammergut. Ein Projekt von <a href="http://dasproblem.at" target="_blank" rel="noopener noreferrer">DASProblem.at</a> + <a href="http://sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a> Gewidmet der europäischen Kulturhauptstadt 2024 gemäß ihrem Motto: "Kraft der Gegenkultur"</p>
   </div>
-  {%- include slider.html -%}
+  {%- include slider.html slides = page.slider.carousel_1 -%}
 </div>
 
 <div class="is-light_bg" align="center">

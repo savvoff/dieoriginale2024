@@ -3,8 +3,3 @@
 ---
 @import "main";
 
-// dev
-@import
-  "minima/skins/{{ site.skin | default: 'classic' }}";
-  // "minima/initialize";
-// dev end

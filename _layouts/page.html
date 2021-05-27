@@ -6,7 +6,7 @@ layout: default
     <div class="row">
       <div class="col-12 col-lg-10 col-xl-8">
         {%- capture title_translated -%}{% t page.title %}{%- endcapture -%}
-        <h1 class="post__title"><strong>{{ title_translated | default: page.title | escape }}</strong></h1>        
+        <h1 class="post__title"><strong>{{ title_translated | default: page.title | replace: "titles.", "" | escape }}</strong></h1>        
       </div>
     </div>
     <article class="post-content">

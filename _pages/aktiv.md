@@ -6,8 +6,17 @@ permalink: /aktiv/
 permalink_en: /activity/
 languages: ["en"]
 order: 4
----
 
+slider: 
+  carousel_1: 
+    - 'Bad Goisern': /assets/images/Bad-Goisern.jpg
+    - 'SADoG Resultat': /assets/images/SADoG-Resultat.jpg
+    - 'Artculture': /assets/images/artculture.jpg
+    - 'SADoG Aber': /assets/images/SADoG-Aber.jpg
+    - 'Copies & Limits': /assets/images/copies.jpg
+    - 'Fotostrecke "Making of"': /assets/images/Making_of.jpg
+    - 'Saboteur': /assets/images/saboteur.jpg
+---
 {%- if site.lang != site.languages[0] -%}
   {% tf _pages/aktiv.md %}
 {%- else -%}
@@ -53,7 +62,7 @@ order: 4
       <p>Alternative Kreative aus dem Salzkammergut stellen sich dem Thema GEGENKULTUR 2024, um gemeinsam auf sich und ihre Arbeit in dieser Region im Zuge des Projekts „Artculture Provincial" aufmerksam zu machen. Schaffende aus allen Bereichen sind ab sofort zur Teilnahme eingeladen, für weitere Infos bitte mit dem Betreff „Un-artig" in <a href="{% tl contacts %}" target="_blank" rel="noopener noreferrer">Kontakt</a> treten.
       </p>
     </div>
-    {%- include slider.html -%}  
+    {%- include slider.html slides = page.slider.carousel_1 -%}  
   </div>
 
   <div class="is-light_bg" align="center">

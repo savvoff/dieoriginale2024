@@ -6,6 +6,16 @@ permalink: /dr-sadog/
 permalink_en: /dr-sadog/
 languages: ["en"]
 order: 1
+
+slider: 
+  carousel_1: 
+    - 'Bad Goisern': /assets/images/Bad-Goisern.jpg
+    - 'SADoG Resultat': /assets/images/SADoG-Resultat.jpg
+    - 'Artculture': /assets/images/artculture.jpg
+    - 'SADoG Aber': /assets/images/SADoG-Aber.jpg
+    - 'Copies & Limits': /assets/images/copies.jpg
+    - 'Fotostrecke "Making of"': /assets/images/Making_of.jpg
+    - 'Saboteur': /assets/images/saboteur.jpg
 ---
 {%- if site.lang != site.languages[0] -%}
   {% tf _pages/sadog.md %}
@@ -174,12 +184,12 @@ order: 1
     <br> <br>
     <p><a href="https://" target="_blank" rel="noopener noreferrer">Infos zu aktuellen Initiativen und Projekten</a> der Gegenkulturgestaltung im Salzkammergut.</p> 
   </div>
-  {%- include slider.html -%}
+  {%- include slider.html slides = page.slider.carousel_1 -%}
   <div class="col-12 col-lg-10 col-xl-8">
     <h3><strong>Fanartikel</strong></h3>
     <p>Womit man die Reichweite unterstützen, wie auch einen Teil zur Finanzierung der Initiative beitragen kann, werden mit freundlicher Unterstützung und jedem Verzicht auf Beteiligung vom <a href="http://" target="_blank" rel="noopener noreferrer">Skgt-Shop</a> angeboten und über diesen vertrieben.</p>
   </div>
-  {%- include slider.html -%}
+  {%- include slider.html slides = page.slider.carousel_1 -%}
   <div class="col-12 col-lg-10 col-xl-8">
     <h3><strong>Spenden + Sponsoren</strong></h3>
     <br> <br>

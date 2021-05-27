@@ -6,6 +6,16 @@ permalink: /medial/
 permalink_en: /middle/
 languages: ["en"]
 order: 2
+
+slider: 
+  carousel_1: 
+    - 'Bad Goisern': /assets/images/Bad-Goisern.jpg
+    - 'SADoG Resultat': /assets/images/SADoG-Resultat.jpg
+    - 'Artculture': /assets/images/artculture.jpg
+    - 'SADoG Aber': /assets/images/SADoG-Aber.jpg
+    - 'Copies & Limits': /assets/images/copies.jpg
+    - 'Fotostrecke "Making of"': /assets/images/Making_of.jpg
+    - 'Saboteur': /assets/images/saboteur.jpg
 ---
 {%- if site.lang != site.languages[0] -%}
   {% tf _pages/medial.md %}
@@ -17,7 +27,7 @@ order: 2
     <h3>artculture provincial (Das ist Kunst)</h3>
     <p>"Artculture Provincial“ zur Förderung der Gegenkultur in Europas Kulturhauptstadt. Satirische Begleiterscheinung zum aktuellen Verständnis für Kunst im Salzkammergut. Ein Projekt von <a href="http://dasproblem.at" target="_blank" rel="noopener noreferrer">DASProblem.at</a> + <a href="http://sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a> Gewidmet der europäischen Kulturhauptstadt 2024 gemäß ihrem Motto: "Kraft der Gegenkultur"</p>
   </div>
-  {%- include slider.html -%}
+  {%- include slider.html slides = page.slider.carousel_1 -%} 
 </div>
 
 <div class="is-light_bg" align="center">

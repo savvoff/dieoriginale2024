@@ -1,41 +1,16 @@
 <div class="splide slider-home" data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": false}'>
   <div class="splide__track">
     <ul class="splide__list">
-      <li class="splide__slide" data-text="Bad Goisern">
-        <a class="img-fit" href="{{ "/assets/images/Bad-Goisern.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/Bad-Goisern.jpg" | relative_url }}" alt="Bad Goisern">
-        </a>
-      </li> 
-      <li class="splide__slide" data-text="SADoG Resultat">
-        <a class="img-fit" href="{{ "/assets/images/SADoG-Resultat.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/SADoG-Resultat.jpg" | relative_url }}" alt="SADoG-Resultat">
-        </a>
-      </li> 
-      <li class="splide__slide" data-text="Artculture">
-        <a class="img-fit" href="{{ "/assets/images/artculture.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/artculture.jpg" | relative_url }}" alt="artculture">
-        </a>
-      </li> 
-      <li class="splide__slide" data-text="SADoG Aber">
-        <a class="img-fit" href="{{ "/assets/images/SADoG-Aber.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/SADoG-Aber.jpg" | relative_url }}" alt="SADoG Aber">
-        </a>
-      </li> 
-      <li class="splide__slide" data-text="Copies & Limits">
-        <a class="img-fit" href="{{ "/assets/images/limits.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/copies.jpg" | relative_url }}" alt="Copies & Limits">
-        </a>
-      </li> 
-      <li class="splide__slide" data-text="Fotostrecke 'Making of'">
-        <a class="img-fit" href="{{ "/assets/images/Making_of.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/Making_of.jpg" | relative_url }}" alt="Making of">
-        </a>
-      </li> 
-      <li class="splide__slide" data-text="Saboteur">
-        <a class="img-fit" href="{{ "/assets/images/saboteur.jpg" | relative_url }}" data-zoom-gallery>
-          <img src="{{ "/assets/images/saboteur.jpg" | relative_url }}" alt="saboteur">
-        </a>
-      </li> 
+      {{ include.slides }}
+      {%- for slide in include.slides -%}
+        {%- for item in slide -%}
+        <li class="splide__slide" data-text="{{ item[0] | escape }}">
+          <a class="img-fit" href="{{ item[1] | relative_url }}" data-zoom-gallery>
+            <img src="{{ item[1] | relative_url }}" alt="{{ item[0] | escape }}">
+          </a>
+        </li>
+        {%- endfor -%}
+      {%- endfor -%}      
     </ul>
   </div>
 </div>
