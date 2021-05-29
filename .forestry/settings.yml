@@ -5,8 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: jekyll-pages
-  label: Pages
+  label: Main pages
   create: all
+- type: document
+  path: _pages
+  label: Menu pages
+  match: "**/*"
 - type: directory
   path: _i18n
   label: Translations
