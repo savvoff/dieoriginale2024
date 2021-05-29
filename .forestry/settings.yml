@@ -10,7 +10,6 @@ sections:
 - type: document
   path: _pages
   label: Menu pages
-  match: "**/*"
 - type: directory
   path: _i18n
   label: Translations
