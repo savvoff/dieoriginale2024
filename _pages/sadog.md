@@ -2,20 +2,21 @@
 layout: page
 title: titles.sadog
 namespace: sadog
-permalink: /dr-sadog/
-permalink_en: /dr-sadog/
-languages: ["en"]
-order: 1
+permalink: "/dr-sadog/"
+permalink_en: "/dr_sadog/"
+languages:
+- en
+order: "1"
+slider:
+  carousel_1:
+  - Bad Goisern: "/assets/images/Bad-Goisern.jpg"
+  - SADoG Resultat: "/assets/images/SADoG-Resultat.jpg"
+  - Artculture: "/assets/images/artculture.jpg"
+  - SADoG Aber: "/assets/images/SADoG-Aber.jpg"
+  - Copies & Limits: "/assets/images/copies.jpg"
+  - Fotostrecke "Making of": "/assets/images/Making_of.jpg"
+  - Saboteur: "/assets/images/saboteur.jpg"
 
-slider: 
-  carousel_1: 
-    - 'Bad Goisern': /assets/images/Bad-Goisern.jpg
-    - 'SADoG Resultat': /assets/images/SADoG-Resultat.jpg
-    - 'Artculture': /assets/images/artculture.jpg
-    - 'SADoG Aber': /assets/images/SADoG-Aber.jpg
-    - 'Copies & Limits': /assets/images/copies.jpg
-    - 'Fotostrecke "Making of"': /assets/images/Making_of.jpg
-    - 'Saboteur': /assets/images/saboteur.jpg
 ---
 {%- if site.lang != site.languages[0] -%}
   {% tf _pages/sadog.md %}
