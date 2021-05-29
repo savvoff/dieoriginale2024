@@ -8,7 +8,7 @@ sections:
   label: Main pages
   create: all
 - type: document
-  path: _pages
+  path: _pages/aktiv
   label: Menu pages
 - type: directory
   path: _i18n
