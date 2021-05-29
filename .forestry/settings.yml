@@ -12,6 +12,10 @@ sections:
   label: Translations
   create: all
   match: "**/*"
+- type: document
+  path: _config.yml
+  label: Site settings
+  match: "**/*"
 - type: heading
   label: Menu pages
 - type: document
