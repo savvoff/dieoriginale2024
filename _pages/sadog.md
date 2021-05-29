@@ -3,7 +3,7 @@ layout: page
 title: titles.sadog
 namespace: sadog
 permalink: /dr-sadog/
-permalink_en: /dr-sadog/
+permalink_en: /dr_sadog/
 languages: ["en"]
 order: 1
 
