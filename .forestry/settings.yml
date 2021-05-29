@@ -8,8 +8,9 @@ sections:
   label: Main pages
   create: all
 - type: document
-  path: _pages/aktiv
+  path: _pages/aktiv.md
   label: Menu pages
+  read_only: true
 - type: directory
   path: _i18n
   label: Translations
