@@ -7,13 +7,31 @@ sections:
 - type: jekyll-pages
   label: Main pages
   create: all
-- type: document
-  path: _pages/aktiv.md
-  label: Menu pages
 - type: directory
   path: _i18n
   label: Translations
   create: all
+  match: "**/*"
+- type: heading
+  label: Menu pages
+- type: document
+  path: _pages/dr-sadog.md
+  label: DR.SADOG
+  match: "**/*"
+- type: document
+  path: _pages/medial.md
+  label: MEDIAL
+  match: "**/*"
+- type: document
+  path: _pages/diagnose.md
+  label: DIAGNOSE
+  match: "**/*"
+- type: document
+  path: _pages/aktiv.md
+  label: AKTIV
+- type: document
+  path: _pages/kontakt.md
+  label: KONTAKT
   match: "**/*"
 upload_dir: assets/images
 public_path: assets/images
