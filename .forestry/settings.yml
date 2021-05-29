@@ -15,24 +15,20 @@ sections:
 - type: heading
   label: Menu pages
 - type: document
-  path: _pages/dr-sadog.md
+  path: _pages/sadog.md
   label: DR.SADOG
-  match: "**/*"
 - type: document
   path: _pages/medial.md
   label: MEDIAL
-  match: "**/*"
 - type: document
   path: _pages/diagnose.md
   label: DIAGNOSE
-  match: "**/*"
 - type: document
   path: _pages/aktiv.md
   label: AKTIV
 - type: document
   path: _pages/kontakt.md
   label: KONTAKT
-  match: "**/*"
 upload_dir: assets/images
 public_path: assets/images
 front_matter_path: ''
