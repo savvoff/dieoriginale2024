@@ -1,4 +1,5 @@
 global:
+  contact: Contact Us
   legal: Legal
 
 langs:
@@ -8,6 +9,5 @@ langs:
 titles:
   aktiv: AKTIVITY
   diagnose: DIAGNOSIS
-  kontakt: CONTACTS
   medial: MEDIAL
   sadog: Dr.SADoG

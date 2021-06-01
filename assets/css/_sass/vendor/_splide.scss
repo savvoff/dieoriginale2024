@@ -1,6 +1,10 @@
-@import url("https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css");
 .slider {
   position: relative;
+  &-gallery {
+    width: 0;
+    height: 0;
+  }
   &-home {    
     padding: $spacer * 2 0;
     @include row-ib();

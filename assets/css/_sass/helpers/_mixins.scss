@@ -20,7 +20,7 @@
 }
 
 // Calculate responsive font size
-@mixin fluid($min-vw, $max-vw, $min-size, $max-size, $prop: "font-size", $important: true) {
+@mixin fluid($min-vw, $max-vw, $min-size, $max-size, $prop: "font-size", $important: false) {
   $u1: unit($min-vw);
   $u2: unit($max-vw);
   $u3: unit($min-size);
@@ -63,5 +63,5 @@
 }
 
 @mixin font-weight($weight: 400) {
-  font-weight: $weight !important;
+  font-weight: $weight;
 }

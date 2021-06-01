@@ -1,0 +1,7 @@
+@import url("https://cdn.jsdelivr.net/npm/viewerjs@1.9.2/dist/viewer.min.css");
+.viewer {
+  &-title {
+    @extend .h5;
+    color: $light;
+  }
+}

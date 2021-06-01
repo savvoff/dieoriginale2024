@@ -1,16 +1,28 @@
-<div class="splide slider-home" data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": false}'>
+<div class="splide slider-home"
+  data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": true, "keyboard": false}'>
   <div class="splide__track">
     <ul class="splide__list">
-      {{ include.slides }}
       {%- for slide in include.slides -%}
+      {%- assign idx = forloop.index | minus: 1 -%}
         {%- for item in slide -%}
         <li class="splide__slide" data-text="{{ item[0] | escape }}">
-          <a class="img-fit" href="{{ item[1] | relative_url }}" data-zoom-gallery>
+          <!--  href="{{ item[1] | relative_url }} -->
+          <a class="img-fit"> 
             <img src="{{ item[1] | relative_url }}" alt="{{ item[0] | escape }}">
           </a>
+          {%- assign gallery_size = include.gallery[idx] | size -%}
+          {%- if gallery_size > 0 -%}
+          <ul class="slider-gallery" data-viewer='{"movable": true, "fullscreen": false, "keyboard": false}'>
+            {%- for gallery in include.gallery[idx] -%}
+              {%- for item in gallery -%}
+                <li><img data-src="{{ item[1] | relative_url }}" alt="{{ item[0] | escape }}"></li>
+              {%- endfor -%}
+            {%- endfor -%}
+           </ul>
+           {%- endif -%}
         </li>
         {%- endfor -%}
-      {%- endfor -%}      
+      {%- endfor -%}
     </ul>
   </div>
 </div>

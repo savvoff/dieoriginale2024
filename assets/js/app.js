@@ -5,10 +5,28 @@
     }
 
     this.options = {
-      luminousOpts: {
-        closeOnScroll: true,
-        caption: function(instance) {
-          return instance.parentNode.dataset.text;
+      // luminousOpts: {
+      //   closeOnScroll: true,
+      //   caption: function(instance) {
+      //     return instance.parentNode.dataset.text;
+      //   }
+      // },
+      galleryOpts: {
+        toolbar: {
+          zoomIn: 0,
+          zoomOut: 0,
+          oneToOne: 0,
+          reset: 0,
+          prev: 4,
+          play: {
+            show: 4,
+            size: "large",
+          },
+          next: 4,
+          rotateLeft: 0,
+          rotateRight: 0,
+          flipHorizontal: 0,
+          flipVertical: 0,
         }
       }
     };
@@ -43,11 +61,25 @@
     }
 
     function lightBoxInit() {
-      document.querySelectorAll("[data-zoom]").forEach(function (el) {
-        new Luminous(el, _self.options.luminousOpts);
-      });
-      if (document.querySelector("[data-zoom-gallery]"))
-        new LuminousGallery(document.querySelectorAll("[data-zoom-gallery]"), null, _self.options.luminousOpts);
+      // document.querySelectorAll("[data-zoom]").forEach(function (el) {
+      //   new Luminous(el, _self.options.luminousOpts);
+      // });
+      document.querySelectorAll(".slider-gallery").forEach(function (el) {        
+        const options = _self.options.galleryOpts;          
+        options.url = function (img) {
+          return img.dataset.src;
+        };
+        try {
+          Object.assign(options, el.dataset.viewer ? JSON.parse(el.dataset.viewer) : {});          
+          const viewer = new Viewer(el, options);
+          el.previousElementSibling.addEventListener("click", function(ev) {
+            ev.preventDefault();
+            viewer.show();
+          });
+        } catch (err) {
+          console.error(err);
+        }
+      });     
     }
 
     function menuToggle() {
