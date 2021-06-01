@@ -5,22 +5,7 @@
         <div class="col">
           <p><strong>Kunst im Visier.</strong> Eine Initiative von <a href="//dasproblem.at/" target="_blank" rel="noopener noreferrer">DASProblem.at</a> und <a href="//sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a></p>
         </div>
-        <div class="langs">
-          <ul class="langs__list">
-            {%- assign langs = site.languages | default: "de" -%}
-            {%- for lang in langs -%}
-              {%- if lang == "de" and site.default_locale_in_subfolder != true -%}
-                {%- assign lang_link = site.baseurl_root | append: "/" -%}
-              {%- else -%}
-                {%- assign lang_link = site.baseurl_root | append: "/" | append: lang -%}
-              {%- endif -%}
-              <li class="langs__list-item">
-                {%- assign lang_fullname = site.translations[site.lang].langs[lang] -%}
-                <a {% if site.lang == lang %}class="is-active"{% endif %}href="{{ lang_link }}">{{ lang_fullname | slice: 0, 2 }}</a>
-              </li>
-            {%- endfor -%}
-          </ul>
-        </div>
+        {%- include lang-switcher.html -%} 
       </div>
     </div>
   </div>
@@ -34,9 +19,9 @@
           <nav class="page-header__nav">
             <div class="burger">
               <span class="menu-icon">
-                <svg viewBox="0 0 18 15" width="18px" height="15px">
-                  <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-                </svg>
+                <svg width="32" height="24" viewBox="0 0 32 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32 2.3744C32 3.6864 30.8178 4.7488 29.3618 4.7488H2.63822C1.18222 4.7504 0 3.6864 0 2.3744C0 1.064 1.18222 0 2.63822 0H29.3618C30.8178 0 32 1.064 32 2.3744ZM32 12.0256C32 13.336 30.8178 14.4 29.3618 14.4H2.63822C1.18222 14.4 0 13.336 0 12.0256C0 10.7136 1.18222 9.6512 2.63822 9.6512H29.3618C30.8178 9.6496 32 10.7136 32 12.0256ZM32 21.6256C32 22.936 30.8178 24 29.3618 24H2.63822C1.18222 24 0 22.936 0 21.6256C0 20.3136 1.18222 19.2528 2.63822 19.2528H29.3618C30.8178 19.2496 32 20.312 32 21.6256Z"/>
+                  </svg>                  
               </span>
             </div>
             <ul class="page-header__nav-list">
@@ -70,6 +55,7 @@
             </ul>
           </nav>
         </div>
+        {%- include lang-switcher.html -%} 
       </div>
     </div>
   </div>

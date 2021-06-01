@@ -12,7 +12,7 @@
           </a>
           {%- assign gallery_size = include.gallery[idx] | size -%}
           {%- if gallery_size > 0 -%}
-          <ul class="slider-gallery" data-viewer='{"movable": true, "fullscreen": false, "keyboard": false}'>
+          <ul class="slider-gallery" data-viewer='{"movable": true, "fullscreen": false, "keyboard": true}'>
             {%- for gallery in include.gallery[idx] -%}
               {%- for item in gallery -%}
                 <li><img data-src="{{ item[1] | relative_url }}" alt="{{ item[0] | escape }}"></li>

@@ -1,0 +1,16 @@
+<div class="langs">
+  <ul class="langs__list">
+    {%- assign langs = site.languages | default: "de" -%}
+    {%- for lang in langs -%}
+      {%- if lang == "de" and site.default_locale_in_subfolder != true -%}
+        {%- assign lang_link = site.baseurl_root | append: "/" -%}
+      {%- else -%}
+        {%- assign lang_link = site.baseurl_root | append: "/" | append: lang -%}
+      {%- endif -%}
+      <li class="langs__list-item">
+        {%- assign lang_fullname = site.translations[site.lang].langs[lang] -%}
+        <a {% if site.lang == lang %}class="is-active"{% endif %}href="{{ lang_link }}">{{ lang_fullname | slice: 0, 2 }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

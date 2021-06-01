@@ -5,9 +5,26 @@
   }
   &_top, &_bottom {
     padding: $spacer 0;
+    .langs {
+      @include lg(display, none);
+    }
+  }
+  &_top {
+    p {
+      @include fluid($vw-576, $vw-1200, $font-size-sm / 1.2, rem-calc(18px));
+    }
   }
   &_bottom {
     background-color: $secondary;
+    .langs {
+      @include lg(display, block);
+      @include from($break_lg) {
+        display: none;
+      }
+      a {
+        color: $white;
+      }
+    }
   }
   .langs {
     @include col();
@@ -85,11 +102,10 @@
     @include lg(display, block);
     span {
       position: absolute;
-      top: 0;
-      right: 0;
-      padding: 0 $spacer / 2;
-      margin-top: -$spacer / 2;
+      top: -0.5%;
+      right: 0;      
       transform: translateX(100%);
+      @include col-padding();
     }
     svg {
       fill: $white;
