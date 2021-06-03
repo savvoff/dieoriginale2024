@@ -7,15 +7,11 @@
 #
 layout: home
 slider: 
-  home: [
-    ["Bad Goisern", "/assets/images/Bad-Goisern.jpg"],
-    ["SADoG Resultat", "/assets/images/SADoG-Resultat.jpg"],
-    ["Artculture", "/assets/images/artculture.jpg"],
-    ["SADoG Aber", "/assets/images/SADoG-Aber.jpg"],
-    ["Copies & Limits", "/assets/images/copies.jpg"],
-    ["Fotostrecke 'Making of'", "/assets/images/Making_of.jpg"],
-    ["Saboteur", "/assets/images/saboteur.jpg"],
-  ]
+  home: 
+    -
+      title: Bad Goisern
+      alt: Bad Goisern
+      link: /assets/images/Bad-Goisern.jpg
 galleries:
   home:
     -
@@ -30,3 +26,10 @@ galleries:
       - ['SADoG Aber', '/assets/images/SADoG-Aber.jpg']
       - ['Fotostrecke "Making of"', '/assets/images/Making_of.jpg']
 ---
+["Bad Goisern", "/assets/images/Bad-Goisern.jpg"],
+    ["SADoG Resultat", "/assets/images/SADoG-Resultat.jpg"],
+    ["Artculture", "/assets/images/artculture.jpg"],
+    ["SADoG Aber", "/assets/images/SADoG-Aber.jpg"],
+    ["Copies & Limits", "/assets/images/copies.jpg"],
+    ["Fotostrecke 'Making of'", "/assets/images/Making_of.jpg"],
+    ["Saboteur", "/assets/images/saboteur.jpg"],
