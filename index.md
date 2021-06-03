@@ -11,7 +11,31 @@ slider:
     -
       title: Bad Goisern
       alt: Bad Goisern
-      link: /assets/images/Bad-Goisern.jpg
+      image: "/assets/images/Bad-Goisern.jpg"
+    -
+      title: SADoG Resultat
+      alt: SADoG Resultat
+      image: "/assets/images/SADoG-Resultat.jpg"
+    -
+      title: Artculture
+      alt: Artculture
+      image: "/assets/images/artculture.jpg"
+    -
+      title: SADoG Aber
+      alt: SADoG Aber
+      image: "/assets/images/SADoG-Aber.jpg"
+    -
+      title: Copies & Limits
+      alt: Copies & Limits
+      image: "/assets/images/copies.jpg"
+    -
+      title: Fotostrecke 'Making of'
+      alt: Fotostrecke 'Making of'
+      image: "/assets/images/Making_of.jpg"
+    -
+      title: Saboteur
+      alt: Saboteur
+      image: "/assets/images/saboteur.jpg"
 galleries:
   home:
     -
@@ -26,10 +50,3 @@ galleries:
       - ['SADoG Aber', '/assets/images/SADoG-Aber.jpg']
       - ['Fotostrecke "Making of"', '/assets/images/Making_of.jpg']
 ---
-["Bad Goisern", "/assets/images/Bad-Goisern.jpg"],
-    ["SADoG Resultat", "/assets/images/SADoG-Resultat.jpg"],
-    ["Artculture", "/assets/images/artculture.jpg"],
-    ["SADoG Aber", "/assets/images/SADoG-Aber.jpg"],
-    ["Copies & Limits", "/assets/images/copies.jpg"],
-    ["Fotostrecke 'Making of'", "/assets/images/Making_of.jpg"],
-    ["Saboteur", "/assets/images/saboteur.jpg"],
