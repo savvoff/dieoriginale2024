@@ -5,29 +5,13 @@
     }
 
     this.options = {
-      // luminousOpts: {
-      //   closeOnScroll: true,
-      //   caption: function(instance) {
-      //     return instance.parentNode.dataset.text;
-      //   }
-      // },
       galleryOpts: {
-        toolbar: {
-          zoomIn: 0,
-          zoomOut: 0,
-          oneToOne: 0,
-          reset: 0,
-          prev: 4,
-          play: {
-            show: 4,
-            size: "large",
-          },
-          next: 4,
-          rotateLeft: 0,
-          rotateRight: 0,
-          flipHorizontal: 0,
-          flipVertical: 0,
-        }
+        dynamic: true,
+        plugins: [lgAutoplay, lgThumbnail],
+        extraProps: ["alt"],        
+        showZoomInOutIcons: true,
+        actualSize: false,
+        download: false
       }
     };
     var _self = this;
@@ -35,7 +19,13 @@
 
     function sliderInit() {
       document.querySelectorAll("[data-splide]").forEach(function (el) {
-        new Splide(el).mount();
+        const slider = new Splide(el);
+        slider.on("mounted", function() {
+          setTimeout(function() {
+            el.style.opacity = 1;
+          }, 300);
+        });
+        slider.mount();
       });
     }
     
@@ -61,21 +51,15 @@
     }
 
     function lightBoxInit() {
-      // document.querySelectorAll("[data-zoom]").forEach(function (el) {
-      //   new Luminous(el, _self.options.luminousOpts);
-      // });
-      document.querySelectorAll(".slider-gallery").forEach(function (el) {        
-        const options = _self.options.galleryOpts;          
-        options.url = function (img) {
-          return img.dataset.src;
-        };
+      document.querySelectorAll("[data-gallery]").forEach(function (el) {        
+        const options = _self.options.galleryOpts;
         try {
-          Object.assign(options, el.dataset.viewer ? JSON.parse(el.dataset.viewer) : {});          
-          const viewer = new Viewer(el, options);
-          el.previousElementSibling.addEventListener("click", function(ev) {
-            ev.preventDefault();
-            viewer.show();
-          });
+          options.dynamicEl = JSON.parse(el.dataset.gallery);
+          Object.assign(options, el.dataset.galleryOptions ? JSON.parse(el.dataset.galleryOptions) : {});
+          const lg = lightGallery(el, options);
+          el.addEventListener("click", function() {
+            lg.openGallery();
+          });      
         } catch (err) {
           console.error(err);
         }

@@ -4,14 +4,16 @@
     align-items: center;
   }
   &_top, &_bottom {
-    padding: $spacer 0;
+    padding: $spacer-base 0;
     .langs {
       @include lg(display, none);
     }
   }
   &_top {
     p {
-      @include fluid($vw-576, $vw-1200, rem-calc(10px), rem-calc(18px));
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
   &_bottom {
@@ -28,13 +30,13 @@
   }
   .langs {
     @include col();
-    margin-left: auto;
+    margin-left: auto!important;
     &__list {
       display: inline-flex;
       &-item {
         a {
           display: inline-block;
-          margin-left: $spacer/2;
+          margin-left: $spacer-base;
           text-transform: uppercase;
           font-weight: $font-weight-bold;          
           &.is-active {
@@ -47,7 +49,7 @@
   &__nav {
     width: 100%;
     max-width: 250px;
-    padding: $spacer * 2 0;
+    padding: $spacer-lg 0;
     position: absolute;
     top: 0;
     left: -250px;
@@ -106,6 +108,10 @@
       right: 0;      
       transform: translateX(100%);
       @include col-padding();
+      @include sm-block(){
+        padding-left: $fields_sm;
+        padding-right: $fields_sm;
+      }
     }
     svg {
       fill: $white;

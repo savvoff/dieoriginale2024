@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-family: $font-family-base;
-  @include fluid($vw-576, $vw-1200, $font-size-base, rem-calc(18px));
+  @include fluid($vw-576, $vw-1200, $font-size-sm, rem-calc(18px));
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
@@ -55,7 +55,7 @@ a:not([href^='#']) {
 }
 
 ::-webkit-scrollbar-thumb {
-  height: $spacer * 3;
+  height: $spacer-lg;
   border-radius: $border-radius-sm;
   background-color: darken($secondary, 15%);
 }
@@ -83,7 +83,11 @@ a:not([href^='#']) {
 }
 
 .col {
+  max-width: calc(100% - #{$offset});
   @include col();
+  @include sm-block(){
+    max-width: calc(100% - #{$offset_sm});
+  }
   &-auto {
     margin: 0 auto;
   }
@@ -95,6 +99,9 @@ a:not([href^='#']) {
     .col-#{$i} {
       @include col();
       @include size($i);
+      @include sm-block(){
+        width: calc(100% - #{$offset_sm});
+      }
     }
   }  
 } 
@@ -107,6 +114,9 @@ a:not([href^='#']) {
         $val: 100% / $columns * $i;
         @media screen and (min-width: $size){
           width: #{calc(#{$val} - #{$offset})};
+        }
+        @include sm-block(){
+          width: calc(100% - #{$offset_sm});
         }
       }
     }  

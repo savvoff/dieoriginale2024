@@ -10,43 +10,59 @@ slider:
   home: 
     -
       title: Bad Goisern
-      alt: Bad Goisern
       image: "/assets/images/Bad-Goisern.jpg"
+      alt: Bad Goisern
     -
       title: SADoG Resultat
-      alt: SADoG Resultat
       image: "/assets/images/SADoG-Resultat.jpg"
+      alt: SADoG Resultat
     -
       title: Artculture
-      alt: Artculture
       image: "/assets/images/artculture.jpg"
+      alt: Artculture
     -
       title: SADoG Aber
-      alt: SADoG Aber
       image: "/assets/images/SADoG-Aber.jpg"
+      alt: SADoG Aber
     -
       title: Copies & Limits
-      alt: Copies & Limits
       image: "/assets/images/copies.jpg"
+      alt: Copies & Limits
     -
       title: Fotostrecke 'Making of'
-      alt: Fotostrecke 'Making of'
       image: "/assets/images/Making_of.jpg"
+      alt: Fotostrecke 'Making of'
     -
       title: Saboteur
-      alt: Saboteur
       image: "/assets/images/saboteur.jpg"
+      alt: Saboteur
 galleries:
   home:
     -
-      - ['Outoforder kunstkaufen', '/assets/images/outoforder-kunstkaufen.jpg']
-      - ['SADoG Resultat', '/assets/images/SADoG-Resultat.jpg']
-      - ['Artculture', '/assets/images/artculture.jpg']
-      - ['SADoG Aber', '/assets/images/SADoG-Aber.jpg']
+      - 
+        title: Outoforder kunstkaufen
+        image: "/assets/images/outoforder-kunstkaufen.jpg"
+        thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+        alt: Outoforder kunstkaufen
+      - 
+        title: Copies & Limits
+        image: "/assets/images/limits.jpg"
+        thumb: "/assets/images/limits.jpg"
+        alt: Copies & Limits
     -
-      - ['Limits', '/assets/images/limits.jpg']
-      - ['SADoG Resultat', '/assets/images/SADoG-Resultat.jpg']
-      - ['Artculture', '/assets/images/artculture.jpg']
-      - ['SADoG Aber', '/assets/images/SADoG-Aber.jpg']
-      - ['Fotostrecke "Making of"', '/assets/images/Making_of.jpg']
+      - 
+        title: Copies & Limits
+        image: "/assets/images/limits.jpg"
+        thumb: "/assets/images/limits.jpg"
+        alt: Copies & Limits
+      - 
+        title: Outoforder kunstkaufen
+        image: "/assets/images/outoforder-kunstkaufen.jpg"
+        thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+        alt: Outoforder kunstkaufen
+      - 
+        title: Outoforder kunstkaufen
+        image: "/assets/images/outoforder-kunstkaufen.jpg"
+        thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+        alt: Outoforder kunstkaufen
 ---

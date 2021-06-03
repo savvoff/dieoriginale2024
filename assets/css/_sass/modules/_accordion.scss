@@ -1,7 +1,7 @@
 .accordion {
   margin: 0;
   margin-top: -$border-width;
-  padding: $spacer;
+  padding: $spacer-base;
   border: {
     top: $border-width solid $dark;
     bottom: $border-width solid $dark;
@@ -17,7 +17,7 @@
   strong {
     &:after {
       position: relative;
-      left: $spacer / 2;
+      left: $spacer-sm;
       font-family: "Material Icons";
       content: "\e145";
       vertical-align: bottom;
@@ -29,12 +29,15 @@
         content: "\e15b";
       }
     }
+    & + .accordion-content {
+      padding: $spacer-base;
+    }
   }
   &-content {
     margin-bottom: 0!important;
-    padding: 0 $spacer;
+    padding: 0 $spacer-base;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s $ease-out-cubic;
+    transition: 0.3s $ease-out-cubic;
   }
 }

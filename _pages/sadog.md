@@ -4,18 +4,38 @@ title: titles.sadog
 namespace: sadog
 permalink: "/dr-sadog/"
 permalink_en: "/dr_sadog/"
-languages:
-- en
+languages: ["en"]
 order: "1"
 slider:
   carousel_1:
-  - Bad Goisern: "/assets/images/Bad-Goisern.jpg"
-  - SADoG Resultat: "/assets/images/SADoG-Resultat.jpg"
-  - Artculture: "/assets/images/artculture.jpg"
-  - SADoG Aber: "/assets/images/SADoG-Aber.jpg"
-  - Copies & Limits: "/assets/images/copies.jpg"
-  - Fotostrecke "Making of": "/assets/images/Making_of.jpg"
-  - Saboteur: "/assets/images/saboteur.jpg"
+    -
+      title: Bad Goisern
+      image: "/assets/images/Bad-Goisern.jpg"
+      alt: Bad Goisern
+    -
+      title: SADoG Resultat
+      image: "/assets/images/SADoG-Resultat.jpg"
+      alt: SADoG Resultat
+    -
+      title: Artculture
+      image: "/assets/images/artculture.jpg"
+      alt: Artculture
+    -
+      title: SADoG Aber
+      image: "/assets/images/SADoG-Aber.jpg"
+      alt: SADoG Aber
+    -
+      title: Copies & Limits
+      image: "/assets/images/copies.jpg"
+      alt: Copies & Limits
+    -
+      title: Fotostrecke 'Making of'
+      image: "/assets/images/Making_of.jpg"
+      alt: Fotostrecke 'Making of'
+    -
+      title: Saboteur
+      image: "/assets/images/saboteur.jpg"
+      alt: Saboteur
 
 ---
 {%- if site.lang != site.languages[0] -%}
@@ -201,12 +221,16 @@ slider:
   <br> <br>
   <button class="accordion h4"><strong>Privatpersonen</strong></button>
   <div class="accordion-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-12 col-lg-10 col-xl-8">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
   </div>
 
   <button class="accordion h4"><strong>Gewerbetreibende</strong></button>
   <div class="accordion-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-12 col-lg-10 col-xl-8">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
   </div>
   <br> <br>
   <div class="col-12 col-lg-10 col-xl-8">

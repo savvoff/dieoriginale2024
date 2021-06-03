@@ -1,12 +1,11 @@
-@import url("https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css");
+@import url("https://unpkg.com/@splidejs/splide@2.4.21/dist/css/splide.min.css");
 .slider {
   position: relative;
-  &-gallery {
-    width: 0;
-    height: 0;
-  }
-  &-home {    
-    padding: $spacer * 2 0;
+  &-gallery {    
+    [data-gallery] {
+      cursor: pointer;
+    }
+    padding: $spacer-lg 0;
     @include row-ib();
     min-height: 560px;
     .splide__track {

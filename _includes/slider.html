@@ -1,27 +1,20 @@
-<div class="splide slider-home"
-  data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": true, "keyboard": false}'>
+<div class="splide slider-gallery"
+  data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": true, "keyboard": false}' style="opacity: 0;">
   <div class="splide__track">
     <ul class="splide__list">
       {%- for slide in include.slides -%}
-      {%- assign idx = forloop.index | minus: 1 -%}
-        {%- for item in slide -%}
-        <li class="splide__slide" data-text="{{ item[0] | escape }}">
-          <!--  href="{{ item[1] | relative_url }} -->
-          <a class="img-fit"> 
-            <img src="{{ item[1] | relative_url }}" alt="{{ item[0] | escape }}">
-          </a>
-          {%- assign gallery_size = include.gallery[idx] | size -%}
-          {%- if gallery_size > 0 -%}
-          <ul class="slider-gallery" data-viewer='{"movable": true, "fullscreen": false, "keyboard": true}'>
+      {%- assign idx = forloop.index0 -%}
+      {%- assign gallery_size = include.gallery[idx] | size -%}      
+        <li class="splide__slide" data-text="{{ slide.title | escape }}">
+          <div {% if gallery_size > 0 %}data-gallery='[
             {%- for gallery in include.gallery[idx] -%}
-              {%- for item in gallery -%}
-                <li><img data-src="{{ item[1] | relative_url }}" alt="{{ item[0] | escape }}"></li>
-              {%- endfor -%}
+              {"subHtml": "{{ gallery.title }}", "src": "{{ gallery.image | relative_url }}", "thumb": "{{ gallery.thumb | default: gallery.image | relative_url }}", "alt": "{{ gallery.alt | default: gallery.title | escape }}"} 
+              {%- if forloop.last != true -%}, {%- endif -%}
             {%- endfor -%}
-           </ul>
-           {%- endif -%}
+            ]' data-gallery-options='{"speed": 500}' {% endif %}class="img-fit"> 
+            <img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | default: slide.title | escape }}">
+          </div>          
         </li>
-        {%- endfor -%}
       {%- endfor -%}
     </ul>
   </div>
