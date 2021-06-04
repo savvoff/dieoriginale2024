@@ -63,13 +63,13 @@ slider:
     <br>
   </div>
   <div class="accordion">
-    <button class="accordion h4"><strong>Making of, 17.04.21</strong></button>
+    <button class="accordion__button h4"><strong>Making of, 17.04.21</strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>    
-    <button class="accordion h4"><strong>Making of, 17.04.21</strong></button>
+    <button class="accordion__button h4"><strong>Making of, 17.04.21</strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -82,19 +82,19 @@ slider:
     <br>
   </div>
   <div class="accordion">
-    <button class="accordion h4"><strong>Bad Goisern, 06.05.21 </strong></button>
+    <button class="accordion__button h4"><strong>Bad Goisern, 06.05.21 </strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>    
-    <button class="accordion h4"><strong>Gmunden, 27.04.21</strong></button>
+    <button class="accordion__button h4"><strong>Gmunden, 27.04.21</strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
-    <button class="accordion h4"><strong>Bad Ischl, 09.04.21</strong></button>
+    <button class="accordion__button h4"><strong>Bad Ischl, 09.04.21</strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -113,13 +113,13 @@ slider:
     <p>Fundstücke der Berichterstattung über das Spektakel:</p>
     <br>
   </div>
-  <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
   <div class="accordion-content">
     <div class="col-12 col-lg-10 col-xl-8">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>    
-  <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
   <div class="accordion-content">
     <div class="col-12 col-lg-10 col-xl-8">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -137,13 +137,13 @@ slider:
     <p>Sich mal richtig auskotzen, womöglich besser anonym? <a href="mailto:{{ site.contact.email }}">Mail!</a></p>
     <br>
   </div>
-  <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
   <div class="accordion-content">
     <div class="col-12 col-lg-10 col-xl-8">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>    
-  <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
   <div class="accordion-content">
     <div class="col-12 col-lg-10 col-xl-8">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

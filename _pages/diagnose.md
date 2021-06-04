@@ -18,13 +18,13 @@ order: 3
       <br>
     </div>
     <div class="accordion">
-      <button class="accordion h4"><strong>Sonderbericht zur Kulturhauptstadt</strong></button>
+      <button class="accordion__button h4"><strong>Sonderbericht zur Kulturhauptstadt</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
-      <button class="accordion h4"><strong>Sonderbericht zur Kulturhauptstadt</strong></button>
+      <button class="accordion__button h4"><strong>Sonderbericht zur Kulturhauptstadt</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -41,13 +41,13 @@ order: 3
       <br>
     </div>
     <div class="accordion">
-      <button class="accordion h4"><strong>Gutachten zum Schaden</strong></button>
+      <button class="accordion__button h4"><strong>Gutachten zum Schaden</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
-      <button class="accordion h4"><strong>Gutachten zum Schaden</strong></button>
+      <button class="accordion__button h4"><strong>Gutachten zum Schaden</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -64,13 +64,13 @@ order: 3
       <br>
     </div>
     <div class="accordion">
-      <button class="accordion h4"><strong>Vision und Risikobewertung</strong></button>
+      <button class="accordion__button h4"><strong>Vision und Risikobewertung</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
-      <button class="accordion h4"><strong>Vision und Risikobewertung</strong></button>
+      <button class="accordion__button h4"><strong>Vision und Risikobewertung</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

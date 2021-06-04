@@ -22,13 +22,13 @@
       <br>
     </div>
     <div class="accordion">
-      <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+      <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
-      <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+      <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -59,7 +59,7 @@
       <br>
     </div>
     <div class="accordion">
-      <button class="accordion is-active h4"><strong>DIE (verworfene!) IDEE</strong></button>
+      <button class="accordion__button is-active h4"><strong>DIE (verworfene!) IDEE</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <br>
@@ -87,13 +87,13 @@
           </div>
         </div>
       </div>    
-      <button class="accordion h4"><strong>DAS RECHTLICHE PROBLEM</strong></button>
+      <button class="accordion__button h4"><strong>DAS RECHTLICHE PROBLEM</strong></button>
       <div class="accordion-content">
        <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
-      <button class="accordion h4"><strong>ALTERNATIVE (zum Trost)</strong></button>
+      <button class="accordion__button h4"><strong>ALTERNATIVE (zum Trost)</strong></button>
       <div class="accordion-content">
         <div class="col-12 col-lg-10 col-xl-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

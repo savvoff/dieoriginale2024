@@ -220,13 +220,13 @@ slider:
   </div>
   <br> <br>
   <div class="accordion">
-    <button class="accordion__button h4"><strong>Privatpersonen</strong></button>
+    <button class="accordion__button__button h4"><strong>Privatpersonen</strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
-    <button class="accordion__button h4"><strong>Gewerbetreibende</strong></button>
+    <button class="accordion__button__button h4"><strong>Gewerbetreibende</strong></button>
     <div class="accordion-content">
       <div class="col-12 col-lg-10 col-xl-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
