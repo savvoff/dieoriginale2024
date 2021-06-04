@@ -11,17 +11,19 @@
         extraProps: ["alt"],        
         showZoomInOutIcons: true,
         actualSize: false,
-        download: false
+        download: false,
+        licenseKey: "WMD39-Z4HW7-VUG73-P85VF"
       }
     };
     var _self = this;
     init();
 
-    function sliderInit() {
+    function sliderInit(fn) {
       document.querySelectorAll("[data-splide]").forEach(function (el) {
         const slider = new Splide(el);
         window.onload = function() {
           slider.mount();
+          fn();
         }
       });
     }
@@ -82,8 +84,7 @@
     }
 
     function init() {
-      sliderInit();
-      lightBoxInit();
+      sliderInit(lightBoxInit);      
       menuToggle();
       accordionMenus();
     }
