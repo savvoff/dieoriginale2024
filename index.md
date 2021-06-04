@@ -56,13 +56,13 @@ galleries:
         thumb: "/assets/images/limits.jpg"
         alt: Copies & Limits
       - 
-        title: Outoforder kunstkaufen
-        image: "/assets/images/outoforder-kunstkaufen.jpg"
-        thumb: "/assets/images/outoforder-kunstkaufen.jpg"
-        alt: Outoforder kunstkaufen
+        title: Doge
+        image: "/assets/images/dog.jpg"
+        thumb: "/assets/images/dog.jpg"
+        alt: Doge
       - 
-        title: Outoforder kunstkaufen
-        image: "/assets/images/outoforder-kunstkaufen.jpg"
-        thumb: "/assets/images/outoforder-kunstkaufen.jpg"
-        alt: Outoforder kunstkaufen
+        title: Pug
+        image: "/assets/images/pug.jpg"
+        thumb: "/assets/images/pug.jpg"
+        alt: Pug
 ---

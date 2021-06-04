@@ -64,16 +64,18 @@ slider:
       <p>Hätte man das vermutet hinter den Kulissen der Tourismusfassade? Kunst wider der Tradition! Schaffende und Werke, die nicht in das Bild, der nach außen hochgehaltenen Kultur passen:</p>
       <br>
     </div>
-    <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
-    <div class="accordion-content">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>    
-    <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
-    <div class="accordion-content">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="accordion">
+      <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+      <div class="accordion-content">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>    
+      <button class="accordion h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+      <div class="accordion-content">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
     </div>
     <br> <br> <br>
@@ -99,44 +101,46 @@ slider:
       <p>Eine Initiative, die aufgrund rechtlich kritischer Voraussetzungen in der Kulturhauptstadt ihre Geburt leider nicht erlebte! Was genau sind die Hintergründe und gibt es eine Alternative dazu?</p>
       <br>
     </div>
-    <button class="accordion is-active h4"><strong>DIE (verworfene!) IDEE</strong></button>
-    <div class="accordion-content">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <br>
-        <div align="left">
-          <figure class="img-fit img-fit_contain ratio-1x1 is-medium is-float-left">
-            <img src="{{ "/assets/images/zweizeiler.png" | relative_url }}" alt="zweizeiler">
-          </figure>
-          <h5><strong>Mach (d)ein Kreuz für die Gegenkultur! </strong></h5>
-          <p>Überall dort, wo dir der offizielle Slogan "no copies*no limits" 
-            unterkommt.<br>
-            <br>
-            Eine satirische Initiative zum Mitgestalten durch gegenkulturelle 
-            Einflussnahme ... <br>
-            <br>
-            Dazu war ein Aufruf angedacht, dieses X als Foto, gerne auch mit den 
-            "Teilnehmern" darauf (als auch anonym) mit den nachfolgenden Tags in 
-            Umlauf zu bringen und Dr.SADoG zukommen zu lassen, der diese als 
-            umfassende Sammlung präsentiert. <br>
-            <br>
-            #nocopXs #nocopXsnolimits #nocops #nocopsnolimits #gegenkultur2024 
-            #kraftdergegenkultur #kunstfreiheit #gegenkulturimsalzkammergut #machmit <br>
-            <br>
-            Dies stellte aber womöglich strafrechtlich ein erhebliches Problem dar, 
-            weshalb Dr.SADoG sich von dieser Überlegung distanzierte .. </p>
+    <div class="accordion">
+      <button class="accordion is-active h4"><strong>DIE (verworfene!) IDEE</strong></button>
+      <div class="accordion-content">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <br>
+          <div align="left">
+            <figure class="img-fit img-fit_contain ratio-1x1 is-medium is-float-left">
+              <img src="{{ "/assets/images/zweizeiler.png" | relative_url }}" alt="zweizeiler">
+            </figure>
+            <h5><strong>Mach (d)ein Kreuz für die Gegenkultur! </strong></h5>
+            <p>Überall dort, wo dir der offizielle Slogan "no copies*no limits" 
+              unterkommt.<br>
+              <br>
+              Eine satirische Initiative zum Mitgestalten durch gegenkulturelle 
+              Einflussnahme ... <br>
+              <br>
+              Dazu war ein Aufruf angedacht, dieses X als Foto, gerne auch mit den 
+              "Teilnehmern" darauf (als auch anonym) mit den nachfolgenden Tags in 
+              Umlauf zu bringen und Dr.SADoG zukommen zu lassen, der diese als 
+              umfassende Sammlung präsentiert. <br>
+              <br>
+              #nocopXs #nocopXsnolimits #nocops #nocopsnolimits #gegenkultur2024 
+              #kraftdergegenkultur #kunstfreiheit #gegenkulturimsalzkammergut #machmit <br>
+              <br>
+              Dies stellte aber womöglich strafrechtlich ein erhebliches Problem dar, 
+              weshalb Dr.SADoG sich von dieser Überlegung distanzierte .. </p>
+          </div>
+        </div>
+      </div>    
+      <button class="accordion h4"><strong>DAS RECHTLICHE PROBLEM</strong></button>
+      <div class="accordion-content">
+       <div class="col-12 col-lg-10 col-xl-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
-    </div>    
-    <button class="accordion h4"><strong>DAS RECHTLICHE PROBLEM</strong></button>
-    <div class="accordion-content">
-     <div class="col-12 col-lg-10 col-xl-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    <button class="accordion h4"><strong>ALTERNATIVE (zum Trost)</strong></button>
-    <div class="accordion-content">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <button class="accordion h4"><strong>ALTERNATIVE (zum Trost)</strong></button>
+      <div class="accordion-content">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
     </div>
     <br> <br> <br>

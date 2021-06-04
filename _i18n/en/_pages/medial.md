@@ -5,7 +5,7 @@
     <h3>artculture provincial (Das ist Kunst)</h3>
     <p>"Artculture Provincial“ zur Förderung der Gegenkultur in Europas Kulturhauptstadt. Satirische Begleiterscheinung zum aktuellen Verständnis für Kunst im Salzkammergut. Ein Projekt von <a href="http://dasproblem.at" target="_blank" rel="noopener noreferrer">DASProblem.at</a> + <a href="http://sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a> Gewidmet der europäischen Kulturhauptstadt 2024 gemäß ihrem Motto: "Kraft der Gegenkultur"</p>
   </div>
-  {%- include slider.html slides = page.slider.carousel_1 -%}
+  {%- include slider.html slides = page.slider.carousel_1 -%} 
 </div>
 
 <div class="is-light_bg" align="center">
@@ -19,16 +19,18 @@
     <h3><strong>Making of Series</strong></h3>
     <br>
   </div>
-  <button class="accordion h4"><strong>Making of, 17.04.21</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>    
-  <button class="accordion h4"><strong>Making of, 17.04.21</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="accordion">
+    <button class="accordion h4"><strong>Making of, 17.04.21</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>    
+    <button class="accordion h4"><strong>Making of, 17.04.21</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
   </div>
   <div class="col-12 col-lg-10 col-xl-8">
@@ -36,22 +38,24 @@
     <h3><strong>Performance Series (Im Auftrag der Kunst )</strong></h3>
     <br>
   </div>
-  <button class="accordion h4"><strong>Bad Goisern, 06.05.21 </strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="accordion">
+    <button class="accordion h4"><strong>Bad Goisern, 06.05.21 </strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>    
+    <button class="accordion h4"><strong>Gmunden, 27.04.21</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
-  </div>    
-  <button class="accordion h4"><strong>Gmunden, 27.04.21</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <button class="accordion h4"><strong>Bad Ischl, 09.04.21</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="accordion h4"><strong>Bad Ischl, 09.04.21</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
   </div>
   <br> <br> <br>

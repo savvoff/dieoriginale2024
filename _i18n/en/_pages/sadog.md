@@ -176,17 +176,18 @@
     <p>Das Projekt finanziert sich bis auf weiteres ausschließlich aus privaten Mitteln, ebenso wie die Betreiberplattform <a href="http://" target="_blank" rel="noopener noreferrer">dasproblem.at</a>, deshalb ist jede Unterstützung willkommen, Möglichkeit(en) zur direkten SPENDE hier (in Kürze!) </p>
   </div>
   <br> <br>
-  <button class="accordion h4"><strong>Privatpersonen</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="accordion">
+    <button class="accordion__button h4"><strong>Privatpersonen</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
-  </div>
-
-  <button class="accordion h4"><strong>Gewerbetreibende</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="accordion__button h4"><strong>Gewerbetreibende</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
   </div>
   <br> <br>

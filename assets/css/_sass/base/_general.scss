@@ -19,6 +19,7 @@ body {
   color: $body-color;
   text-align: left;
   background-color: $body-bg;
+  @include sm(line-height, $line-height-lg);
 }
 
 a:not([href^='#']) {

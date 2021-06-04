@@ -1,36 +1,39 @@
 .accordion {
-  margin: 0;
-  margin-top: -$border-width;
-  padding: $spacer-base;
-  border: {
-    top: $border-width solid $dark;
-    bottom: $border-width solid $dark;
-    left: 0;
-    right: 0;
-  }
-  text-transform: uppercase;
-  color: $secondary; 
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  background-color: transparent;
-  strong {
-    &:after {
-      position: relative;
-      left: $spacer-sm;
-      font-family: "Material Icons";
-      content: "\e145";
-      vertical-align: bottom;
+  position: relative;
+  &__button {
+    margin: 0;
+    margin-top: -$border-width;
+    padding: $spacer-base;
+    border: {
+      top: $border-width solid $dark;
+      bottom: $border-width solid $dark;
+      left: 0;
+      right: 0;
     }
-  }
-  &.is-active {
+    text-transform: uppercase;
+    color: $secondary; 
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
     strong {
       &:after {
-        content: "\e15b";
+        position: relative;
+        left: $spacer-sm;
+        font-family: "Material Icons";
+        content: "\e145";
+        vertical-align: bottom;
       }
     }
-    & + .accordion-content {
-      padding: $spacer-base;
+    &.is-active {
+      strong {
+        &:after {
+          content: "\e15b";
+        }
+      }
+      & + .accordion-content {
+        padding: $spacer-base;
+      }
     }
   }
   &-content {

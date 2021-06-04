@@ -30,8 +30,14 @@
     }
     
     function accordionMenus() {
-      var acc = document.querySelectorAll(".accordion");
+      var acc = document.querySelectorAll(".accordion__button");
       var toggler = function(el) {
+        if (!el.classList.contains("is-active")) {
+          el.closest(".accordion").querySelectorAll(".accordion__button").forEach(function(btn) {
+            btn.classList.remove("is-active");
+            btn.nextElementSibling.style.maxHeight = null;
+          });
+        }
         var panel = el.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
@@ -44,8 +50,8 @@
           toggler(acc[i]);
         }
         acc[i].addEventListener("click", function() {
-          this.classList.toggle("is-active");
           toggler(this);
+          this.classList.toggle("is-active");
         });
       }
     }
