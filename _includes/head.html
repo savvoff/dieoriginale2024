@@ -5,11 +5,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="{{ site.color | default: "#fff" }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {%- capture subpage -%}{% t page.title %}{%- endcapture -%}
+  {%- capture subpage -%}{% t page.t_title %}{%- endcapture -%}
 
   <title>{% if subpage != "" %}{{ subpage | append: " - " }}{% endif %}{{ site.title }}</title>
 
-  {%- seo title = false -%}
+  {%- seo ogtitle = false -%}
   <link rel="icon" href="{{ "/favicon.png" | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}

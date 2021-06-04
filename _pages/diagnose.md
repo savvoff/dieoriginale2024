@@ -1,6 +1,7 @@
 ---
 layout: page
-title: titles.diagnose
+title: DIAGNOSE
+t_title: titles.diagnose
 namespace: diagnosis
 permalink: /diagnose/
 permalink_en: /diagnosis/

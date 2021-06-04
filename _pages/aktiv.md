@@ -1,6 +1,7 @@
 ---
 layout: page
-title: titles.aktiv
+title: AKTIV
+t_title: titles.aktiv
 namespace: activity
 permalink: /aktiv/
 permalink_en: /activity/

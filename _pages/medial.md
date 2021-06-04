@@ -1,6 +1,7 @@
 ---
 layout: page
-title: titles.medial
+title: MEDIAL
+t_title: titles.medial
 namespace: medial
 permalink: /medial/
 permalink_en: /middle/

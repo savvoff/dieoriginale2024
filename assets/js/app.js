@@ -11,8 +11,7 @@
         extraProps: ["alt"],        
         showZoomInOutIcons: true,
         actualSize: false,
-        download: false,
-        preload: 0
+        download: false
       }
     };
     var _self = this;
@@ -21,12 +20,9 @@
     function sliderInit() {
       document.querySelectorAll("[data-splide]").forEach(function (el) {
         const slider = new Splide(el);
-        slider.on("mounted", function() {
-          setTimeout(function() {
-            el.style.opacity = 1;
-          }, 300);
-        });
-        slider.mount();
+        window.onload = function() {
+          slider.mount();
+        }
       });
     }
     

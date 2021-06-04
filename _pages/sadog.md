@@ -1,6 +1,7 @@
 ---
 layout: page
-title: titles.sadog
+title: SADOG
+t_title: titles.sadog
 namespace: sadog
 permalink: "/dr-sadog/"
 permalink_en: "/dr_sadog/"
