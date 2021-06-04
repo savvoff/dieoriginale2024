@@ -1,33 +1,9 @@
 ---
 layout: default
 ---
-{%- if site.lang != site.languages[0] -%}
-  {% tf home.html %}
-{%- else -%}
+
 <section class="home">
   <div class="container">
-    <img class="home-slogan" src="{{ "/assets/images/slogan.png" | relative_url }}" alt="no copies">
-    <div class="row">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <h1 class="home__title">
-          <strong>Der <br>Originale</strong>
-        </h1>        
-        <div class="home__desc">
-          <div class="home__desc-inner col-12 col-md-6">
-            <h2>SADoG</h2>
-            <h4>„KRAFT DER GEGENKULTUR“ Satirische Begleiterscheinung zum Verständnis für Kunst in der Kulturhauptstadt Europas</h4>
-          </div>
-        </div>
-      </div>  
-      <div class="col-12">
-        {%- include slider.html slides = page.slider.home gallery = page.galleries.home -%}
-      </div>    
-      <div class="col-12">
-        <article>
-          {{ content }}
-        </article>
-      </div>
-    </div>
+    {{ content }}
   </div>
 </section>
-{%- endif -%}

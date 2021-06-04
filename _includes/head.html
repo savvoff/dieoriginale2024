@@ -7,9 +7,16 @@
 
   {%- capture subpage -%}{% t page.t_title %}{%- endcapture -%}
 
-  <title>{% if subpage != "" %}{{ subpage | append: " - " }}{% endif %}{{ site.title }}</title>
+  <title>
+    {%- if subpage != "" -%}
+      {{ subpage | append: " - " }}
+    {%- else -%}
+    {{ page.main_title | default: site.title | append: " - " }}
+    {%- endif -%}
+    {{ site.title }}
+  </title>
 
-  {%- seo ogtitle = false -%}
+  {%- seo title = false -%}
   <link rel="icon" href="{{ "/favicon.png" | relative_url }}" type="image/png">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}

@@ -2,18 +2,23 @@
   data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": true, "keyboard": false}'>
   <div class="splide__track">
     <ul class="splide__list">
-      {%- for slide in include.slides -%}
-      {%- assign idx = forloop.index0 -%}
-      {%- assign gallery_size = include.gallery[idx] | size -%}      
+      {%- for slide in include.slides -%}  
         <li class="splide__slide" data-text="{{ slide.title | escape }}">
-          <div {% if gallery_size > 0 %}data-gallery='[
-            {%- for gallery in include.gallery[idx] -%}
-              {"subHtml": "{{ gallery.title }}", "src": "{{ gallery.image | relative_url }}", "thumb": "{{ gallery.thumb | default: gallery.image | relative_url }}", "alt": "{{ gallery.alt | default: gallery.title | escape }}"} 
+          {%- if slide.link contains "http" -%}
+            <a href="{{ slide.link }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | default: slide.title | escape }}">
+            </a>
+          {%- else -%}
+          {%- assign gallery = include.gallery[slide.link] -%}
+          <div {% if gallery %}data-gallery='[
+            {%- for slide in gallery.slides -%}
+              {"subHtml": "{{ slide.title }}", "src": "{{ slide.image | relative_url }}", "thumb": "{{ slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape }}"} 
               {%- if forloop.last != true -%}, {%- endif -%}
             {%- endfor -%}
             ]' data-gallery-options='{"speed": 500}' {% endif %}class="img-fit"> 
             <img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | default: slide.title | escape }}">
-          </div>          
+          </div>     
+          {%- endif -%}
         </li>
       {%- endfor -%}
     </ul>
