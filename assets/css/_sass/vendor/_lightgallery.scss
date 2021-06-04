@@ -10,4 +10,11 @@
   &-backdrop {
     background-color: rgba($black, 0.9);
   }
+  &-outer {
+    .lg-thumb-item {
+      &.active, &:hover {
+        border-color: $secondary;
+      }
+    }
+  }
 }
