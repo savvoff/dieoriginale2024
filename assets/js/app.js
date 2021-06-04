@@ -11,7 +11,8 @@
         extraProps: ["alt"],        
         showZoomInOutIcons: true,
         actualSize: false,
-        download: false
+        download: false,
+        preload: 0
       }
     };
     var _self = this;
