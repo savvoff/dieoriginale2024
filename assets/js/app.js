@@ -8,10 +8,12 @@
       galleryOpts: {
         dynamic: true,
         plugins: [lgAutoplay, lgThumbnail],
-        extraProps: ["alt"],        
-        showZoomInOutIcons: true,
+        extraProps: ["alt"],
         actualSize: false,
         download: false,
+        mobileSettings: {
+          showCloseIcon: true
+        },
         licenseKey: "WMD39-Z4HW7-VUG73-P85VF"
       }
     };

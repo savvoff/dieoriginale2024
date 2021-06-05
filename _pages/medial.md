@@ -114,16 +114,18 @@ slider:
     <p>Fundstücke der Berichterstattung über das Spektakel:</p>
     <br>
   </div>
-  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>    
-  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="accordion">
+    <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>    
+    <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
   </div>
   <br> <br>
@@ -138,16 +140,18 @@ slider:
     <p>Sich mal richtig auskotzen, womöglich besser anonym? <a href="mailto:{{ site.contact.email }}">Mail!</a></p>
     <br>
   </div>
-  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>    
-  <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
-  <div class="accordion-content">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="accordion">  
+    <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>    
+    <button class="accordion__button h4"><strong>Lorem ipsum dolor sit amet</strong></button>
+    <div class="accordion-content">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
   </div>
   <br> <br> <br>
