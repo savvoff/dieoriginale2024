@@ -23,10 +23,10 @@
     function sliderInit(fn) {
       document.querySelectorAll("[data-splide]").forEach(function (el) {
         const slider = new Splide(el);
-        window.onload = function() {
+        window.addEventListener("load", function() {
           slider.mount();
           fn();
-        }
+        });
       });
     }
     
