@@ -2,6 +2,10 @@
 layout: page
 title: DIAGNOSE
 t_title: titles.diagnose
+image:
+  path: favicon.png
+  height: 100
+  width: 100
 namespace: diagnosis
 permalink: /diagnose/
 permalink_en: /diagnosis/

@@ -7,6 +7,10 @@
 #
 layout: home
 main_title: Der Originale
+image:
+  path: favicon.png
+  height: 100
+  width: 100
 slider: 
   home: 
     -

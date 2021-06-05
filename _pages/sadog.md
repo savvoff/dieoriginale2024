@@ -2,6 +2,10 @@
 layout: page
 title: SADOG
 t_title: titles.sadog
+image:
+  path: favicon.png
+  height: 100
+  width: 100
 namespace: sadog
 permalink: "/dr-sadog/"
 permalink_en: "/dr_sadog/"

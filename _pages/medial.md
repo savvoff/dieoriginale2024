@@ -2,6 +2,10 @@
 layout: page
 title: MEDIAL
 t_title: titles.medial
+image:
+  path: favicon.png
+  height: 100
+  width: 100
 namespace: medial
 permalink: /medial/
 permalink_en: /middle/

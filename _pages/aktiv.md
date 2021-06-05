@@ -2,6 +2,10 @@
 layout: page
 title: AKTIV
 t_title: titles.aktiv
+image:
+  path: favicon.png
+  height: 100
+  width: 100
 namespace: activity
 permalink: /aktiv/
 permalink_en: /activity/
