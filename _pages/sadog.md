@@ -3,44 +3,38 @@ layout: page
 title: SADOG
 t_title: titles.sadog
 image:
-  path: favicon.png
-  height: 100
-  width: 100
+  path: ''
+  height: ''
+  width: ''
 namespace: sadog
 permalink: "/dr-sadog/"
 permalink_en: "/dr_sadog/"
-languages: ["en"]
+languages:
+- en
 order: "1"
 slider:
   carousel_1:
-    -
-      title: Bad Goisern
-      image: "/assets/images/Bad-Goisern.jpg"
-      alt: Bad Goisern
-    -
-      title: SADoG Resultat
-      image: "/assets/images/SADoG-Resultat.jpg"
-      alt: SADoG Resultat
-    -
-      title: Artculture
-      image: "/assets/images/artculture.jpg"
-      alt: Artculture
-    -
-      title: SADoG Aber
-      image: "/assets/images/SADoG-Aber.jpg"
-      alt: SADoG Aber
-    -
-      title: Copies & Limits
-      image: "/assets/images/copies.jpg"
-      alt: Copies & Limits
-    -
-      title: Fotostrecke 'Making of'
-      image: "/assets/images/Making_of.jpg"
-      alt: Fotostrecke 'Making of'
-    -
-      title: Saboteur
-      image: "/assets/images/saboteur.jpg"
-      alt: Saboteur
+  - title: Bad Goisern
+    image: "/assets/images/Bad-Goisern.jpg"
+    alt: Bad Goisern
+  - title: SADoG Resultat
+    image: "/assets/images/SADoG-Resultat.jpg"
+    alt: SADoG Resultat
+  - title: Artculture
+    image: "/assets/images/artculture.jpg"
+    alt: Artculture
+  - title: SADoG Aber
+    image: "/assets/images/SADoG-Aber.jpg"
+    alt: SADoG Aber
+  - title: Copies & Limits
+    image: "/assets/images/copies.jpg"
+    alt: Copies & Limits
+  - title: Fotostrecke 'Making of'
+    image: "/assets/images/Making_of.jpg"
+    alt: Fotostrecke 'Making of'
+  - title: Saboteur
+    image: "/assets/images/saboteur.jpg"
+    alt: Saboteur
 
 ---
 {%- if site.lang != site.languages[0] -%}
