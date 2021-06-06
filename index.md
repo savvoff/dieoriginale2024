@@ -1,89 +1,68 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
 layout: home
 main_title: Der Originale
 image:
-  path: favicon.png
-  height: 100
-  width: 100
-slider: 
-  home: 
-    -
-      title: Bad Goisern
-      image: "/assets/images/Bad-Goisern.jpg"
-      link: 0
-      alt: Bad Goisern
-    -
-      title: SADoG Resultat
-      image: "/assets/images/SADoG-Resultat.jpg"
-      link: 1
-      alt: SADoG Resultat
-    -
-      title: Artculture
-      image: "/assets/images/artculture.jpg"
-      link: https://www.lightgalleryjs.com/demos/thumbnails/
-      alt: Artculture
-    -
-      title: SADoG Aber
-      image: "/assets/images/SADoG-Aber.jpg"
-      link: https://www.lightgalleryjs.com/demos/thumbnails/
-      alt: SADoG Aber
-    -
-      title: Copies & Limits
-      image: "/assets/images/copies.jpg"
-      link: https://www.lightgalleryjs.com/demos/thumbnails/
-      alt: Copies & Limits
-    -
-      title: Fotostrecke 'Making of'
-      image: "/assets/images/Making_of.jpg"
-      link: https://www.lightgalleryjs.com/demos/thumbnails/
-      alt: Fotostrecke 'Making of'
-    -
-      title: Saboteur
-      image: "/assets/images/saboteur.jpg"
-      link: https://www.lightgalleryjs.com/demos/thumbnails/
-      alt: Saboteur
+  path: ''
+  height: ''
+  width: ''
+slider:
+  home:
+  - title: Bad Goisern
+    image: "/assets/images/Bad-Goisern.jpg"
+    link: "0"
+    alt: Bad Goisern
+  - title: SADoG Resultat
+    image: "/assets/images/SADoG-Resultat.jpg"
+    link: "1"
+    alt: SADoG Resultat
+  - title: Artculture
+    image: "/assets/images/artculture.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Artculture
+  - title: SADoG Aber
+    image: "/assets/images/SADoG-Aber.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: SADoG Aber
+  - title: Copies & Limits
+    image: "/assets/images/copies.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Copies & Limits
+  - title: Fotostrecke 'Making of'
+    image: "/assets/images/Making_of.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Fotostrecke 'Making of'
+  - title: Saboteur
+    image: "/assets/images/saboteur.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Saboteur
 galleries:
   home:
-    -
-      id: 0
-      slides:
-        - 
-          title: Outoforder kunstkaufen
-          image: "/assets/images/outoforder-kunstkaufen.jpg"
-          thumb: "/assets/images/outoforder-kunstkaufen.jpg"
-          alt: Outoforder kunstkaufen
-        - 
-          title: Copies & Limits
-          image: "/assets/images/limits.jpg"
-          thumb: "/assets/images/limits.jpg"
-          alt: Copies & Limits
-    -
-      id: 1
-      slides:
-        - 
-          title: Copies & Limits
-          image: "/assets/images/limits.jpg"
-          thumb: "/assets/images/limits.jpg"
-          alt: Copies & Limits
-        - 
-          title: Doge
-          image: "/assets/images/dog.jpg"
-          thumb: "/assets/images/dog.jpg"
-          alt: Doge
-        - 
-          title: Pug
-          image: "/assets/images/pug.jpg"
-          thumb: "/assets/images/pug.jpg"
-          alt: Pug
-      
----
+  - id: "0"
+    slides:
+    - title: Outoforder kunstkaufen
+      image: "/assets/images/outoforder-kunstkaufen.jpg"
+      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+      alt: Outoforder kunstkaufen
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+  - id: "1"
+    slides:
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+    - title: Doge
+      image: "/assets/images/dog.jpg"
+      thumb: "/assets/images/dog.jpg"
+      alt: Doge
+    - title: Pug
+      image: "/assets/images/pug.jpg"
+      thumb: "/assets/images/pug.jpg"
+      alt: Pug
 
+---
 {%- if site.lang != site.languages[0] -%}
   {% tf home.html %}
 {%- else -%}
