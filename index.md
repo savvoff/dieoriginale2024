@@ -9,11 +9,11 @@ slider:
   home:
   - title: Bad Goisern
     image: "/assets/images/Bad-Goisern.jpg"
-    link: "0"
+    link: 0
     alt: Bad Goisern
   - title: SADoG Resultat
     image: "/assets/images/SADoG-Resultat.jpg"
-    link: "1"
+    link: 1
     alt: SADoG Resultat
   - title: Artculture
     image: "/assets/images/artculture.jpg"
@@ -37,7 +37,7 @@ slider:
     alt: Saboteur
 galleries:
   home:
-  - id: "0"
+  - id: 0
     slides:
     - title: Outoforder kunstkaufen
       image: "/assets/images/outoforder-kunstkaufen.jpg"
@@ -47,7 +47,7 @@ galleries:
       image: "/assets/images/limits.jpg"
       thumb: "/assets/images/limits.jpg"
       alt: Copies & Limits
-  - id: "1"
+  - id: 1
     slides:
     - title: Copies & Limits
       image: "/assets/images/limits.jpg"
