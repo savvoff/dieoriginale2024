@@ -11,30 +11,63 @@ permalink: "/aktiv/"
 permalink_en: "/activity/"
 languages:
 - en
-order: "4"
+order: 4
 slider:
-  carousel_1:
+  aktiv:
   - title: Bad Goisern
     image: "/assets/images/Bad-Goisern.jpg"
+    link: 0
     alt: Bad Goisern
   - title: SADoG Resultat
     image: "/assets/images/SADoG-Resultat.jpg"
+    link: 1
     alt: SADoG Resultat
   - title: Artculture
     image: "/assets/images/artculture.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Artculture
   - title: SADoG Aber
     image: "/assets/images/SADoG-Aber.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: SADoG Aber
   - title: Copies & Limits
     image: "/assets/images/copies.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Copies & Limits
   - title: Fotostrecke 'Making of'
     image: "/assets/images/Making_of.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Fotostrecke 'Making of'
   - title: Saboteur
     image: "/assets/images/saboteur.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Saboteur
+galleries:
+  aktiv:
+  - id: 0
+    slides:
+    - title: Outoforder kunstkaufen
+      image: "/assets/images/outoforder-kunstkaufen.jpg"
+      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+      alt: Outoforder kunstkaufen
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+  - id: 1
+    slides:
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+    - title: Doge
+      image: "/assets/images/dog.jpg"
+      thumb: "/assets/images/dog.jpg"
+      alt: Doge
+    - title: Pug
+      image: "/assets/images/pug.jpg"
+      thumb: "/assets/images/pug.jpg"
+      alt: Pug
 
 ---
 {%- if site.lang != site.languages[0] -%}
@@ -88,7 +121,7 @@ slider:
       <p>Alternative Kreative aus dem Salzkammergut stellen sich dem Thema GEGENKULTUR 2024, um gemeinsam auf sich und ihre Arbeit in dieser Region im Zuge des Projekts „Artculture Provincial" aufmerksam zu machen. Schaffende aus allen Bereichen sind ab sofort zur Teilnahme eingeladen, für weitere Infos bitte mit dem Betreff „Un-artig" in <a href="{% tl contacts %}" target="_blank" rel="noopener noreferrer">Kontakt</a> treten.
       </p>
     </div>
-    {%- include slider.html slides = page.slider.carousel_1 -%}  
+    {%- include slider.html slides = page.slider.aktiv gallery = page.galleries.aktiv -%}  
   </div>
 
   <div class="is-light_bg" align="center">

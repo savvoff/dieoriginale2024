@@ -46,7 +46,7 @@
       <p>Alternative Kreative aus dem Salzkammergut stellen sich dem Thema GEGENKULTUR 2024, um gemeinsam auf sich und ihre Arbeit in dieser Region im Zuge des Projekts „Artculture Provincial" aufmerksam zu machen. Schaffende aus allen Bereichen sind ab sofort zur Teilnahme eingeladen, für weitere Infos bitte mit dem Betreff „Un-artig" in <a href="{% tl contacts %}" target="_blank" rel="noopener noreferrer">Kontakt</a> treten.
       </p>
     </div>
-    {%- include slider.html slides = page.slider.carousel_1 -%}  
+    {%- include slider.html slides = page.slider.aktiv gallery = page.galleries.aktiv -%}  
   </div>
 
   <div class="is-light_bg" align="center">

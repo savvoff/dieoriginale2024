@@ -3,11 +3,12 @@
   position: relative;
   &-gallery {    
     [data-gallery] {
-      cursor: pointer;
+      cursor: pointer;      
+      height: 100%;
     }
     padding: $spacer-lg 0;
     @include row-ib();
-    min-height: 560px;
+    @include fluid($vw-576, $vw-768, rem-calc(280px), rem-calc(560px), "height");
     .splide__track {
       height: 100%;
       border: $border-width solid $border-color;
@@ -52,6 +53,9 @@
         transform: translate3d(0, -25%, 0);
         transition: opacity 0.2s $ease-out-cubic, 0.5s $ease-out-cubic;
         opacity: 0;
+      }
+      img {
+        width: auto;
       }
     }
     .splide__arrow {

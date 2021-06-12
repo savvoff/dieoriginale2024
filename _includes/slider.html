@@ -5,17 +5,17 @@
       {%- for slide in include.slides -%}  
         <li class="splide__slide" data-text="{{ slide.title | escape }}">
           {%- if slide.link contains "http" -%}
-            <a href="{{ slide.link }}" target="_blank" rel="noopener noreferrer">
+            <a class="img-fit img-fit_contain" href="{{ slide.link }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | default: slide.title | escape }}">
             </a>
           {%- else -%}
           {%- assign gallery = include.gallery[slide.link] -%}
-          <div {% if gallery %}data-gallery='[
+          <div class="img-fit img-fit_contain" {% if gallery %}data-gallery='[
             {%- for slide in gallery.slides -%}
               {"subHtml": "{{ slide.title }}", "src": "{{ slide.image | relative_url }}", "thumb": "{{ slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape }}"} 
               {%- if forloop.last != true -%}, {%- endif -%}
             {%- endfor -%}
-            ]' data-gallery-options='{"speed": 500}' {% endif %}class="img-fit"> 
+            ]' data-gallery-options='{"speed": 500}' {% endif %}> 
             <img src="{{ slide.image | relative_url }}" alt="{{ slide.alt | default: slide.title | escape }}">
           </div>     
           {%- endif -%}

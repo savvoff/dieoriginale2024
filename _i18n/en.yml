@@ -4,8 +4,8 @@ global:
   topbar: <p><strong>Art in sight.</strong> An initiative by <a href="//dasproblem.at/" target="_blank" rel="noopener noreferrer">DASProblem.at</a> and <a href="//sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a></p>
 
 langs:
-  de: German
-  en: English
+  de: Deutsche
+  en: Englisch
 
 titles:
   aktiv: AKTIVITY

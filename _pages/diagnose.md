@@ -11,7 +11,7 @@ permalink: "/diagnose/"
 permalink_en: "/diagnosis/"
 languages:
 - en
-order: "3"
+order: 3
 
 ---
 {%- if site.lang != site.languages[0] -%}

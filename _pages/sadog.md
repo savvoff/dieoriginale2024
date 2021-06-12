@@ -11,30 +11,117 @@ permalink: "/dr-sadog/"
 permalink_en: "/dr_sadog/"
 languages:
 - en
-order: "1"
+order: 1
 slider:
-  carousel_1:
+  sadog_1:
   - title: Bad Goisern
     image: "/assets/images/Bad-Goisern.jpg"
+    link: 0
     alt: Bad Goisern
   - title: SADoG Resultat
     image: "/assets/images/SADoG-Resultat.jpg"
+    link: 1
     alt: SADoG Resultat
   - title: Artculture
     image: "/assets/images/artculture.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Artculture
   - title: SADoG Aber
     image: "/assets/images/SADoG-Aber.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: SADoG Aber
   - title: Copies & Limits
     image: "/assets/images/copies.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Copies & Limits
   - title: Fotostrecke 'Making of'
     image: "/assets/images/Making_of.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Fotostrecke 'Making of'
   - title: Saboteur
     image: "/assets/images/saboteur.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
     alt: Saboteur
+  sadog_2:
+  - title: Bad Goisern
+    image: "/assets/images/Bad-Goisern.jpg"
+    link: 2
+    alt: Bad Goisern
+  - title: SADoG Resultat
+    image: "/assets/images/SADoG-Resultat.jpg"
+    link: 3
+    alt: SADoG Resultat
+  - title: Artculture
+    image: "/assets/images/artculture.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Artculture
+  - title: SADoG Aber
+    image: "/assets/images/SADoG-Aber.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: SADoG Aber
+  - title: Copies & Limits
+    image: "/assets/images/copies.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Copies & Limits
+  - title: Fotostrecke 'Making of'
+    image: "/assets/images/Making_of.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Fotostrecke 'Making of'
+  - title: Saboteur
+    image: "/assets/images/saboteur.jpg"
+    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    alt: Saboteur
+galleries:
+  sadog_1:
+  - id: 0
+    slides:
+    - title: Outoforder kunstkaufen
+      image: "/assets/images/outoforder-kunstkaufen.jpg"
+      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+      alt: Outoforder kunstkaufen
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+  - id: 1
+    slides:
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+    - title: Doge
+      image: "/assets/images/dog.jpg"
+      thumb: "/assets/images/dog.jpg"
+      alt: Doge
+    - title: Pug
+      image: "/assets/images/pug.jpg"
+      thumb: "/assets/images/pug.jpg"
+      alt: Pug
+  sadog_2:
+  - id: 2
+    slides:
+    - title: Outoforder kunstkaufen
+      image: "/assets/images/outoforder-kunstkaufen.jpg"
+      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
+      alt: Outoforder kunstkaufen
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+  - id: 3
+    slides:
+    - title: Copies & Limits
+      image: "/assets/images/limits.jpg"
+      thumb: "/assets/images/limits.jpg"
+      alt: Copies & Limits
+    - title: Doge
+      image: "/assets/images/dog.jpg"
+      thumb: "/assets/images/dog.jpg"
+      alt: Doge
+    - title: Pug
+      image: "/assets/images/pug.jpg"
+      thumb: "/assets/images/pug.jpg"
+      alt: Pug
 
 ---
 {%- if site.lang != site.languages[0] -%}
@@ -204,12 +291,12 @@ slider:
     <br> <br>
     <p><a href="https://" target="_blank" rel="noopener noreferrer">Infos zu aktuellen Initiativen und Projekten</a> der Gegenkulturgestaltung im Salzkammergut.</p> 
   </div>
-  {%- include slider.html slides = page.slider.carousel_1 -%}
+  {%- include slider.html slides = page.slider.sadog_1 gallery = page.galleries.sadog_1 -%}
   <div class="col-12 col-lg-10 col-xl-8">
     <h3><strong>Fanartikel</strong></h3>
     <p>Womit man die Reichweite unterstützen, wie auch einen Teil zur Finanzierung der Initiative beitragen kann, werden mit freundlicher Unterstützung und jedem Verzicht auf Beteiligung vom <a href="http://" target="_blank" rel="noopener noreferrer">Skgt-Shop</a> angeboten und über diesen vertrieben.</p>
   </div>
-  {%- include slider.html slides = page.slider.carousel_1 -%}
+  {%- include slider.html slides = page.slider.sadog_2 gallery = page.galleries.sadog_2 -%}
   <div class="col-12 col-lg-10 col-xl-8">
     <h3><strong>Spenden + Sponsoren</strong></h3>
     <br> <br>
