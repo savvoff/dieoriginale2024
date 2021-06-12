@@ -55,7 +55,7 @@ galleries:
       alt: Copies & Limits
     - title: Doge
       image: "/assets/images/dog.jpg"
-      thumb: "/assets/images/dog.jpg"
+      thumb: ''
       alt: Doge
     - title: Pug
       image: "/assets/images/pug.jpg"
