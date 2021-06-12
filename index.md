@@ -9,7 +9,7 @@ slider:
   home:
   - title: Bad Goisern
     image: "/assets/images/Bad-Goisern.jpg"
-    link: 0
+    link: 
     alt: Bad Goisern
   - title: SADoG Resultat
     image: "/assets/images/SADoG-Resultat.jpg"
