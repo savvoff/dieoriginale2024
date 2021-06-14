@@ -85,7 +85,7 @@ fields:
         label: Alt
       - name: gallery_sw
         type: boolean
-        label: Gallery switcher
+        label: Show gallery
       - name: gallery
         type: field_group_list
         fields:
