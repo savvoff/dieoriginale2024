@@ -83,6 +83,9 @@ fields:
         config:
           required: false
         label: Alt
+      - name: gallery_sw
+        type: boolean
+        label: Gallery switcher
       - name: gallery
         type: field_group_list
         fields:
@@ -114,6 +117,9 @@ fields:
           max: 
           labelField: 
         label: Gallery
+        showOnly:
+          field: gallery_sw
+          value: true
       config:
         min: 
         max: 
