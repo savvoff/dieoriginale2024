@@ -1,27 +1,32 @@
+{%- assign slides = include.slides | map: "slide" -%}
+{%- assign type = include.slides[0].type -%}
 <div class="splide slider-gallery"
   data-splide='{"type": "loop", "arrows": true, "pagination": false, "autoWidth": true, "focus": "center", "autoplay": true, "interval": 5000, "pauseOnHover": true, "keyboard": false}'>
   <div class="splide__track">
-    <ul class="splide__list">
-      {%- for slide in include.slides -%}  
-        {%- for item in slide -%}
-        <li class="splide__slide" data-text="{{ item.title | escape }}">
-          {%- if item.link contains "http" -%}
-            <a class="img-fit img-fit_contain" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
-              <img src="{{ slide.image | relative_url }}" alt="{{ item.alt | default: item.title | escape }}">
-            </a>
-          {%- else -%}
-          {%- assign gallery_size = item.gallery | size -%}
-          <div class="img-fit img-fit_contain" {% if gallery_size > 0 and item.gallery_sw %}data-gallery='[
-            {%- for slide in item.gallery -%}
-              {"subHtml": "{{ slide.title | replace: '"', ""}}", "src": "{{ slide.image | relative_url }}", "thumb": "{{ slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape }}"} 
-              {%- if forloop.last != true -%}, {%- endif -%}
-            {%- endfor -%}
-            ]' data-gallery-options='{"speed": 500}' {% endif %}> 
-            <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title | escape }}">
-          </div>     
-          {%- endif -%}
-        </li>
-        {%- endfor -%}  
+    <ul class="splide__list"{% if type == 'carousel' %} data-gallery data-gallery-options='{"speed": 500}'{% endif %}>
+      {%- for slide in slides -%}
+      {%- for item in slide -%}
+      <li class="splide__slide" data-text="{{ item.title | escape }}"{% if type == 'carousel' %} data-src="{{ item.image | relative_url }}"{% endif %}>
+        {%- if item.link contains "http" -%}
+        <a class="img-fit img-fit_contain" href="{{ item.link | uri_escape }}" target="_blank"
+          rel="noopener noreferrer">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title | escape }}">
+        </a>
+        {%- else -%}
+        {%- assign gallery_size = item.gallery | size -%}
+        <div class="img-fit img-fit_contain"{% if type == 'gallery' and item.gallery_sw and gallery_size > 0 %} data-gallery='[
+          {%- for slide in item.gallery -%}
+          {"subHtml": "{{ slide.title | replace: '"', ""}}", "src": "{{ slide.image | relative_url }}", "thumb": "{{
+          slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape
+          }}"}
+          {%- if forloop.last != true -%}, {%- endif -%}
+          {%- endfor -%}
+          ]' data-gallery-options='{"speed": 500}'{% endif %}>
+          <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title | escape }}">
+        </div>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
       {%- endfor -%}
     </ul>
   </div>

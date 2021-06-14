@@ -5,8 +5,8 @@
     }
 
     this.options = {
-      galleryOpts: {
-        dynamic: true,
+      galleryOpts: {        
+        selector: '.splide__slide:not(.splide__slide--clone)',
         plugins: [lgAutoplay, lgThumbnail],
         extraProps: ["alt"],
         actualSize: false,
@@ -20,13 +20,10 @@
     var _self = this;
     init();
 
-    function sliderInit(fn) {
+    function sliderInit() {
       document.querySelectorAll("[data-splide]").forEach(function (el) {
         const slider = new Splide(el);
-        window.addEventListener("load", function() {
-          slider.mount();
-          fn();
-        });
+        slider.mount();  
       });
     }
     
@@ -61,7 +58,10 @@
       document.querySelectorAll("[data-gallery]").forEach(function (el) {        
         const options = _self.options.galleryOpts;
         try {
-          options.dynamicEl = JSON.parse(el.dataset.gallery);
+          if (el.dataset.gallery) {
+            options.dynamic = true;
+            options.dynamicEl = JSON.parse(el.dataset.gallery);
+          }
           Object.assign(options, el.dataset.galleryOptions ? JSON.parse(el.dataset.galleryOptions) : {});
           const lg = lightGallery(el, options);
           el.addEventListener("click", function() {
@@ -70,7 +70,7 @@
         } catch (err) {
           console.error(err);
         }
-      });     
+      });
     }
 
     function menuToggle() {
@@ -86,7 +86,10 @@
     }
 
     function init() {
-      sliderInit(lightBoxInit);      
+      window.addEventListener("load", function() {
+        sliderInit();
+        lightBoxInit();
+      });
       menuToggle();
       accordionMenus();
     }

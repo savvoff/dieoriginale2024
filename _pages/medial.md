@@ -12,62 +12,52 @@ permalink_en: "/middle/"
 languages:
 - en
 order: 2
-slider:
-  medial:
+sliders:
+- label: medial
+  type: carousel
+  slide:
   - title: Bad Goisern
-    image: "/assets/images/Bad-Goisern.jpg"
-    link: 0
+    image: assets/images/Bad-Goisern.jpg
+    link: ''
     alt: Bad Goisern
+    gallery_sw: false
+    gallery: []
   - title: SADoG Resultat
-    image: "/assets/images/SADoG-Resultat.jpg"
-    link: 1
+    image: assets/images/SADoG-Resultat.jpg
+    link: ''
     alt: SADoG Resultat
+    gallery_sw: false
+    gallery: []
   - title: Artculture
-    image: "/assets/images/artculture.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    image: assets/images/artculture.jpg
+    link: ''
     alt: Artculture
+    gallery_sw: false
+    gallery: []
   - title: SADoG Aber
-    image: "/assets/images/SADoG-Aber.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    image: assets/images/SADoG-Aber.jpg
+    link: ''
     alt: SADoG Aber
+    gallery_sw: false
+    gallery: []
   - title: Copies & Limits
-    image: "/assets/images/copies.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    image: assets/images/limits.jpg
+    link: ''
     alt: Copies & Limits
+    gallery_sw: false
+    gallery: []
   - title: Fotostrecke 'Making of'
-    image: "/assets/images/Making_of.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    image: assets/images/Making_of.jpg
+    link: ''
     alt: Fotostrecke 'Making of'
+    gallery_sw: false
+    gallery: []
   - title: Saboteur
-    image: "/assets/images/saboteur.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
+    image: assets/images/saboteur.jpg
+    link: ''
     alt: Saboteur
-galleries:
-  medial:
-  - id: 0
-    slides:
-    - title: Outoforder kunstkaufen
-      image: "/assets/images/outoforder-kunstkaufen.jpg"
-      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
-      alt: Outoforder kunstkaufen
-    - title: Copies & Limits
-      image: "/assets/images/limits.jpg"
-      thumb: "/assets/images/limits.jpg"
-      alt: Copies & Limits
-  - id: 1
-    slides:
-    - title: Copies & Limits
-      image: "/assets/images/limits.jpg"
-      thumb: "/assets/images/limits.jpg"
-      alt: Copies & Limits
-    - title: Doge
-      image: "/assets/images/dog.jpg"
-      thumb: "/assets/images/dog.jpg"
-      alt: Doge
-    - title: Pug
-      image: "/assets/images/pug.jpg"
-      thumb: "/assets/images/pug.jpg"
-      alt: Pug
+    gallery_sw: false
+    gallery: []
 
 ---
 {%- if site.lang != site.languages[0] -%}
@@ -80,7 +70,8 @@ galleries:
     <h3>artculture provincial (Das ist Kunst)</h3>
     <p>"Artculture Provincial“ zur Förderung der Gegenkultur in Europas Kulturhauptstadt. Satirische Begleiterscheinung zum aktuellen Verständnis für Kunst im Salzkammergut. Ein Projekt von <a href="http://dasproblem.at" target="_blank" rel="noopener noreferrer">DASProblem.at</a> + <a href="http://sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a> Gewidmet der europäischen Kulturhauptstadt 2024 gemäß ihrem Motto: "Kraft der Gegenkultur"</p>
   </div>
-  {%- include slider.html slides = page.slider.medial gallery = page.galleries.medial -%} 
+  {%- assign slider_1 = page.sliders | where: 'label', 'medial' -%}
+  {%- include slider.html slides = slider_1 -%}
 </div>
 
 <div class="is-light_bg" align="center">

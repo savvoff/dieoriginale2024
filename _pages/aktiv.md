@@ -14,25 +14,14 @@ languages:
 order: 4
 sliders:
 - label: aktiv
+  type: carousel
   slide:
   - title: Bad Goisern
     image: assets/images/Bad-Goisern.jpg
     link: ''
     alt: Bad Goisern
-    gallery_sw: true
-    gallery:
-    - title: No order
-      image: assets/images/outoforder-kunstkaufen.jpg
-      thumb: ''
-      alt: No order
-    - title: Doge
-      image: assets/images/dog.jpg
-      thumb: ''
-      alt: Doge
-    - title: Pug
-      image: assets/images/pug.jpg
-      thumb: ''
-      alt: Pug
+    gallery_sw: false
+    gallery: []
   - title: SADoG Resultat
     image: assets/images/SADoG-Resultat.jpg
     link: ''
@@ -69,7 +58,6 @@ sliders:
     alt: Saboteur
     gallery_sw: false
     gallery: []
-  type: carousel
 
 ---
 {%- if site.lang != site.languages[0] -%}
@@ -125,8 +113,8 @@ sliders:
       </p>
     </div>
     <br>
-    {%- assign slider_1 =  page.sliders | where: 'label', 'aktiv' | map: 'slide' -%}
-    {%- include slider.html slides = slider_1 -%}  
+    {%- assign slider_1 =  page.sliders | where: 'label', 'aktiv' -%}
+    {%- include slider.html slides = slider_1 -%}
   </div>
 
   <div class="is-light_bg" align="center">

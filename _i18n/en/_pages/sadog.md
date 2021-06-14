@@ -162,12 +162,14 @@
     <br> <br>
     <p><a href="https://" target="_blank" rel="noopener noreferrer">Infos zu aktuellen Initiativen und Projekten</a> der Gegenkulturgestaltung im Salzkammergut.</p> 
   </div>
-  {%- include slider.html slides = page.slider.sadog_1 gallery = page.galleries.sadog_1 -%}
+  {%- assign slider_1 = page.sliders | where: 'label', 'sadog_1' -%}
+  {%- include slider.html slides = slider_1 -%} 
   <div class="page-col">
     <h3><strong>Fanartikel</strong></h3>
     <p>Womit man die Reichweite unterstützen, wie auch einen Teil zur Finanzierung der Initiative beitragen kann, werden mit freundlicher Unterstützung und jedem Verzicht auf Beteiligung vom <a href="http://" target="_blank" rel="noopener noreferrer">Skgt-Shop</a> angeboten und über diesen vertrieben.</p>
   </div>
-  {%- include slider.html slides = page.slider.sadog_2 gallery = page.galleries.sadog_2 -%}
+  {%- assign slider_2 = page.sliders | where: 'label', 'sadog_2' -%}
+  {%- include slider.html slides = slider_2 -%} 
   <div class="page-col">
     <h3><strong>Spenden + Sponsoren</strong></h3>
     <br> <br>

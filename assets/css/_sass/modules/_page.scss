@@ -37,6 +37,9 @@
         color: $secondary;
       }
     }
+    div[align="right"] {
+      @include sm(text-align, left);
+    }
     mark {
       color: $secondary;
       background-color: transparent;

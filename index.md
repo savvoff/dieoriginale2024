@@ -5,63 +5,64 @@ image:
   path: ''
   height: ''
   width: ''
-slider:
-  home:
+sliders:
+- label: home
+  type: gallery
+  slide:
   - title: Bad Goisern
-    image: "/assets/images/Bad-Goisern.jpg"
-    link: 
+    image: assets/images/Bad-Goisern.jpg
+    link: ''
     alt: Bad Goisern
-  - title: SADoG Resultat
-    image: "/assets/images/SADoG-Resultat.jpg"
-    link: 1
-    alt: SADoG Resultat
-  - title: Artculture
-    image: "/assets/images/artculture.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Artculture
-  - title: SADoG Aber
-    image: "/assets/images/SADoG-Aber.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: SADoG Aber
-  - title: Copies & Limits
-    image: "/assets/images/copies.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Copies & Limits
-  - title: Fotostrecke 'Making of'
-    image: "/assets/images/Making_of.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Fotostrecke 'Making of'
-  - title: Saboteur
-    image: "/assets/images/saboteur.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Saboteur
-galleries:
-  home:
-  - id: 0
-    slides:
-    - title: Outoforder kunstkaufen
-      image: "/assets/images/outoforder-kunstkaufen.jpg"
-      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
-      alt: Outoforder kunstkaufen
-    - title: Copies & Limits
-      image: "/assets/images/limits.jpg"
-      thumb: "/assets/images/limits.jpg"
-      alt: Copies & Limits
-  - id: 1
-    slides:
-    - title: Copies & Limits
-      image: "/assets/images/limits.jpg"
-      thumb: "/assets/images/limits.jpg"
-      alt: Copies & Limits
+    gallery_sw: true
+    gallery:
+    - title: No order
+      image: assets/images/outoforder-kunstkaufen.jpg
+      thumb: ''
+      alt: No order
     - title: Doge
-      image: "/assets/images/dog.jpg"
+      image: assets/images/dog.jpg
       thumb: ''
       alt: Doge
     - title: Pug
-      image: "/assets/images/pug.jpg"
-      thumb: "/assets/images/pug.jpg"
+      image: assets/images/pug.jpg
+      thumb: ''
       alt: Pug
-
+  - title: SADoG Resultat
+    image: assets/images/SADoG-Resultat.jpg
+    link: ''
+    alt: SADoG Resultat
+    gallery_sw: false
+    gallery: []
+  - title: Artculture
+    image: assets/images/artculture.jpg
+    link: ''
+    alt: Artculture
+    gallery_sw: false
+    gallery: []
+  - title: SADoG Aber
+    image: assets/images/SADoG-Aber.jpg
+    link: ''
+    alt: SADoG Aber
+    gallery_sw: false
+    gallery: []
+  - title: Copies & Limits
+    image: assets/images/limits.jpg
+    link: ''
+    alt: Copies & Limits
+    gallery_sw: false
+    gallery: []
+  - title: Fotostrecke 'Making of'
+    image: assets/images/Making_of.jpg
+    link: ''
+    alt: Fotostrecke 'Making of'
+    gallery_sw: false
+    gallery: []
+  - title: Saboteur
+    image: assets/images/saboteur.jpg
+    link: ''
+    alt: Saboteur
+    gallery_sw: false
+    gallery: []
 ---
 {%- if site.lang != site.languages[0] -%}
   {% tf home.html %}
@@ -80,7 +81,8 @@ galleries:
     </div>
   </div>  
   <div class="col-12">
-    {%- include slider.html slides = page.slider.home gallery = page.galleries.home -%}
+    {%- assign slider_1 = page.sliders | where: 'label', 'home' -%}
+    {%- include slider.html slides = slider_1 -%}
   </div>
 </div>
 {%- endif -%}
