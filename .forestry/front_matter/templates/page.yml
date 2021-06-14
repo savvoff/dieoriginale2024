@@ -1,0 +1,88 @@
+---
+label: PAGE
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: t_title
+  label: t_title
+- type: field_group
+  name: image
+  label: image
+  fields:
+  - type: text
+    name: path
+    label: path
+  - type: text
+    name: height
+    label: height
+  - type: text
+    name: width
+    label: width
+- type: text
+  name: namespace
+  label: namespace
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: permalink_en
+  label: permalink_en
+- type: list
+  name: languages
+  label: languages
+- type: number
+  name: order
+  label: order
+- type: field_group
+  name: slider
+  label: slider
+  fields:
+  - type: field_group_list
+    name: medial
+    label: medial
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: file
+      name: image
+      label: image
+    - type: number
+      name: link
+      label: link
+    - type: text
+      name: alt
+      label: alt
+- type: field_group
+  name: galleries
+  label: galleries
+  fields:
+  - type: field_group_list
+    name: medial
+    label: medial
+    fields:
+    - type: number
+      name: id
+      label: id
+    - type: field_group_list
+      name: slides
+      label: slides
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: file
+        name: image
+        label: image
+      - type: file
+        name: thumb
+        label: thumb
+      - type: text
+        name: alt
+        label: alt
