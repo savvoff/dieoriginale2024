@@ -23,9 +23,8 @@ var settings = {
     },
     sm: {
       width: "576px",
-      offset: "16px",
-      fields:
-        "8px" /* set fields only if you want to change container.fields */,
+      // fields:
+      //   "8px" /* set fields only if you want to change container.fields */,
     },
     /* 
         We can create any quantity of break points.

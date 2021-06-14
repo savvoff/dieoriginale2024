@@ -1,9 +1,13 @@
-.post {
+.page {
   position: relative;
-  padding: $spacer-base * 3 0;
+  padding: $spacer-base * 3 0 $spacer-base;
   @include md(padding, $spacer-lg 0);
   .row {
     justify-content: center;
+  }
+  &-col {
+    max-width: 880px;
+    @include col-padding();
   }
   &-content {
     @include row-offsets();    
@@ -19,8 +23,11 @@
     @include fluid($vw-576, $vw-1200, $h3-font-size, $font-size-lg);
   }
   article {
-    p, div {
-      max-width: 100%;
+    .slider-gallery {
+      margin: 0;
+      padding: 0;
+    }
+    p {
       @include clearfix();
       margin-bottom: $spacer-base;
     }

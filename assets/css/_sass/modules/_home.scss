@@ -11,9 +11,6 @@
     right: $offset_one_side;
     @include md(top, -$spacer-base * 2.5);
     @include md(max-width, 150px);
-    @include sm-block(){
-      right: $fields_sm;
-    }
   }
   &__title {
     text-transform: uppercase;

@@ -26,7 +26,7 @@ a:not([href^='#']) {
   color: $secondary;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    color: $black;
   }
 }
 
@@ -65,7 +65,7 @@ a:not([href^='#']) {
 }
 
 .page {
-  &-content {
+  &-wrap {
     position: relative;
     flex: 1 0 auto;
   }
@@ -86,9 +86,6 @@ a:not([href^='#']) {
 .col {
   max-width: calc(100% - #{$offset});
   @include col();
-  @include sm-block(){
-    max-width: calc(100% - #{$offset_sm});
-  }
   &-auto {
     margin: 0 auto;
   }
@@ -100,9 +97,6 @@ a:not([href^='#']) {
     .col-#{$i} {
       @include col();
       @include size($i);
-      @include sm-block(){
-        width: calc(100% - #{$offset_sm});
-      }
     }
   }  
 } 
@@ -115,9 +109,6 @@ a:not([href^='#']) {
         $val: 100% / $columns * $i;
         @media screen and (min-width: $size){
           width: #{calc(#{$val} - #{$offset})};
-        }
-        @include sm-block(){
-          width: calc(100% - #{$offset_sm});
         }
       }
     }  

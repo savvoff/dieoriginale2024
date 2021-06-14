@@ -128,8 +128,8 @@ galleries:
   {% tf _pages/sadog.md %}
 {%- else -%}
 <div align="center">
-  <div class="col-12 col-lg-10 col-xl-8">
-    <h2 class="post__subtitle"><span>Identität</span></h2>
+  <div class="page-col">
+    <h2 class="page__subtitle"><span>Identität</span></h2>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/visierlogo-ohne.png" | relative_url }}" alt="visierlogo ohne">
     <br> <br>
@@ -163,9 +163,9 @@ galleries:
 </div>
 
 <div class="is-light_bg" align="center">
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <br> <br>  
-    <h2 class="post__subtitle"><span>Entstehung</span></h2>
+    <h2 class="page__subtitle"><span>Entstehung</span></h2>
     <br><br>
     <h4><strong>Die INITIALZÜNDUNG</strong></h4>
     <p>war ein Aufruf in der „Ischler Woche" Ausgabe 941: <span class="is-dark">„Und wir sollten uns, beispielsweise im Rahmen der Info-Tour, erkundigen Hingehen, fragen, Meinung sagen! Auch wenn es eine unbequeme ist.„</span></p>
@@ -195,9 +195,9 @@ galleries:
 </div>
 
 <div align="center">
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <br> <br>
-    <h2 class="post__subtitle"><span>Qualifikation(en)</span></h2>
+    <h2 class="page__subtitle"><span>Qualifikation(en)</span></h2>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/palitra.png" | relative_url }}" alt="palitra">
     <br> <br>
@@ -222,9 +222,9 @@ galleries:
 </div>
 
 <div class="is-light_bg" align="center">
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <br> <br>
-    <h2 class="post__subtitle"><span>Auftrag</span></h2>
+    <h2 class="page__subtitle"><span>Auftrag</span></h2>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/visierlogo.png" | relative_url }}" alt="visierlogo">
     <br> <br>
@@ -249,9 +249,9 @@ galleries:
 </div>  
 
 <div align="center">
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <br> <br>
-    <h2 class="post__subtitle"><span>Ziel</span></h2>
+    <h2 class="page__subtitle"><span>Ziel</span></h2>
     <br> <br>
     <h5><strong>GEGENKULTURELLE EINFLUSSNAHME</strong></h5>
     <p>
@@ -281,9 +281,9 @@ galleries:
 </div>
 
 <div class="is-light_bg" align="center">
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <br> <br>
-    <h2 class="post__subtitle"><span>Hilf(€)</span></h2>
+    <h2 class="page__subtitle"><span>Hilf(€)</span></h2>
     <br>
     <h3><strong>Kunst kaufen</strong></h3>
     <p>Zur Serie <a href="http://" target="_blank" rel="noopener noreferrer">„Artculture Provincial"</a> gibt es eine unbestimmte Anzahl an Motiven in einer limitierten Anzahl von Kunstdrucken zu erwerben. Von stets 30 Exemplaren werden jeweils 24 Stk. käuflich erhältlich sein und nach Abverkauf dieser, 3 weitere Exemplare je Auflage noch für einem guten Zweck gestiftet.
@@ -292,12 +292,12 @@ galleries:
     <p><a href="https://" target="_blank" rel="noopener noreferrer">Infos zu aktuellen Initiativen und Projekten</a> der Gegenkulturgestaltung im Salzkammergut.</p> 
   </div>
   {%- include slider.html slides = page.slider.sadog_1 gallery = page.galleries.sadog_1 -%}
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <h3><strong>Fanartikel</strong></h3>
     <p>Womit man die Reichweite unterstützen, wie auch einen Teil zur Finanzierung der Initiative beitragen kann, werden mit freundlicher Unterstützung und jedem Verzicht auf Beteiligung vom <a href="http://" target="_blank" rel="noopener noreferrer">Skgt-Shop</a> angeboten und über diesen vertrieben.</p>
   </div>
   {%- include slider.html slides = page.slider.sadog_2 gallery = page.galleries.sadog_2 -%}
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <h3><strong>Spenden + Sponsoren</strong></h3>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/munze.png" | relative_url }}" alt="munze">
@@ -308,19 +308,19 @@ galleries:
   <div class="accordion">
     <button class="accordion__button h4"><strong>Privatpersonen</strong></button>
     <div class="accordion-content">
-      <div class="col-12 col-lg-10 col-xl-8">
+      <div class="page-col">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
     <button class="accordion__button h4"><strong>Gewerbetreibende</strong></button>
     <div class="accordion-content">
-      <div class="col-12 col-lg-10 col-xl-8">
+      <div class="page-col">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
   </div>
   <br> <br>
-  <div class="col-12 col-lg-10 col-xl-8">
+  <div class="page-col">
     <h3><strong>Reichweite</strong></h3>
     <p>Virtuell wie im realen Leben ist jede Unterstützung wichtig! Erwähnungen und Verlinkungen jeglicher Art auf allen Plattformen helfen dabei enorm. Auch Platz in Berichterstattungen oder auf Werbemitteln. Selbst jene, die über ihre Tätigkeit Werbemittel gut in Umlauf bringen könnten, sind aufgerufen, sich zu melden!</p>
     <br>

@@ -18,22 +18,22 @@ order: 3
   {% tf _pages/diagnose.md %}
 {%- else -%}
   <div align="center">
-    <div class="col-12 col-lg-10 col-xl-8">
+    <div class="page-col">
       <img class="is-small" src="{{ "/assets/images/pfote.png" | relative_url }}" alt="pfote">
       <br> <br>
-      <h2 class="post__subtitle"><span>Das Problem</span></h2>  
+      <h2 class="page__subtitle"><span>Das Problem</span></h2>  
       <br>
     </div>
     <div class="accordion">
       <button class="accordion__button h4"><strong>Sonderbericht zur Kulturhauptstadt</strong></button>
       <div class="accordion-content">
-        <div class="col-12 col-lg-10 col-xl-8">
+        <div class="page-col">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
       <button class="accordion__button h4"><strong>Sonderbericht zur Kulturhauptstadt</strong></button>
       <div class="accordion-content">
-        <div class="col-12 col-lg-10 col-xl-8">
+        <div class="page-col">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
@@ -42,21 +42,21 @@ order: 3
   </div>
 
   <div class="is-light_bg" align="center">
-    <div class="col-12 col-lg-10 col-xl-8">
+    <div class="page-col">
       <br> <br>
-      <h2 class="post__subtitle"><span>Rückblicke</span></h2>  
+      <h2 class="page__subtitle"><span>Rückblicke</span></h2>  
       <br>
     </div>
     <div class="accordion">
       <button class="accordion__button h4"><strong>Gutachten zum Schaden</strong></button>
       <div class="accordion-content">
-        <div class="col-12 col-lg-10 col-xl-8">
+        <div class="page-col">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
       <button class="accordion__button h4"><strong>Gutachten zum Schaden</strong></button>
       <div class="accordion-content">
-        <div class="col-12 col-lg-10 col-xl-8">
+        <div class="page-col">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
@@ -65,21 +65,21 @@ order: 3
   </div>
 
   <div align="center">
-    <div class="col-12 col-lg-10 col-xl-8">
+    <div class="page-col">
       <br><br>
-      <h2 class="post__subtitle"><span>Prognosen</span></h2>  
+      <h2 class="page__subtitle"><span>Prognosen</span></h2>  
       <br>
     </div>
     <div class="accordion">
       <button class="accordion__button h4"><strong>Vision und Risikobewertung</strong></button>
       <div class="accordion-content">
-        <div class="col-12 col-lg-10 col-xl-8">
+        <div class="page-col">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>    
       <button class="accordion__button h4"><strong>Vision und Risikobewertung</strong></button>
       <div class="accordion-content">
-        <div class="col-12 col-lg-10 col-xl-8">
+        <div class="page-col">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
@@ -88,9 +88,9 @@ order: 3
   </div>
 
   <div class="is-light_bg" align="center">
-    <div class="col-12 col-lg-10 col-xl-8">
+    <div class="page-col">
       <br> <br>
-      <h2 class="post__subtitle"><span>Zitiert</span></h2>  
+      <h2 class="page__subtitle"><span>Zitiert</span></h2>  
       <br>
       <div class="row">
         <div class="col-6" align="left">

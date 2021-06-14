@@ -12,7 +12,7 @@
           {%- assign gallery = include.gallery[slide.link] -%}
           <div class="img-fit img-fit_contain" {% if gallery %}data-gallery='[
             {%- for slide in gallery.slides -%}
-              {"subHtml": "{{ slide.title }}", "src": "{{ slide.image | relative_url }}", "thumb": "{{ slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape }}"} 
+              {"subHtml": "{{ slide.title | replace: '"', ""}}", "src": "{{ slide.image | relative_url }}", "thumb": "{{ slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape }}"} 
               {%- if forloop.last != true -%}, {%- endif -%}
             {%- endfor -%}
             ]' data-gallery-options='{"speed": 500}' {% endif %}> 

@@ -1,7 +1,7 @@
 global:
   contact: Contact Us
   legal: Legal
-  topbar: <p><strong>Art in sight.</strong> An initiative by <a href="//dasproblem.at/" target="_blank" rel="noopener noreferrer">DASProblem.at</a> and <a href="//sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a></p>
+  topbar: <p><strong><a href="/">Art in sight.</a></strong> An initiative by <a href="//dasproblem.at/" target="_blank" rel="noopener noreferrer">DASProblem.at</a> and <a href="//sign-of-liberty.com" target="_blank" rel="noopener noreferrer">Sign-of-Liberty.com</a></p>
 
 langs:
   de: Deutsche

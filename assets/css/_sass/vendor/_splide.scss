@@ -1,16 +1,15 @@
 @import url("https://unpkg.com/@splidejs/splide@2.4.21/dist/css/splide.min.css");
 .slider {
   position: relative;
-  &-gallery {    
+  &-gallery {
     [data-gallery] {
-      cursor: pointer;      
-      height: 100%;
+      cursor: pointer;  
     }
     padding: $spacer-lg 0;
     @include row-ib();
     @include fluid($vw-576, $vw-768, rem-calc(280px), rem-calc(560px), "height");
     .splide__track {
-      height: 100%;
+      height: 100%; 
       border: $border-width solid $border-color;
     }
     .splide__list { 
@@ -28,16 +27,16 @@
         width: 100%;
         height: 100%;
         background-color: rgba($secondary, 0.8);
-        transform-origin: bottom;
-        transform: scale(0);
-        transition: 0.5s $ease-out-cubic;
+        transform: scale(0.8);
+        opacity: 0;
+        transition: 0.3s $ease-out-cubic;
       }
       &:hover {
         &:before {
           transform: scale(1);
+          opacity: 1;
         }
         &:after {
-          transform: translate3d(0, -50%, 0);
           opacity: 1;
         }
       }
@@ -49,13 +48,16 @@
         left: 0;
         text-align: center;
         text-transform: uppercase;
+        font-weight: $font-weight-bold;
         color: $white;
-        transform: translate3d(0, -25%, 0);
-        transition: opacity 0.2s $ease-out-cubic, 0.5s $ease-out-cubic;
+        transition: opacity 0.3s $ease-out-cubic;
         opacity: 0;
       }
-      img {
-        width: auto;
+      .img-fit {
+        height: 100%;
+        img {
+          width: auto;
+        }
       }
     }
     .splide__arrow {
