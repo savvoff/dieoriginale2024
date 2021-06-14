@@ -127,8 +127,20 @@ sliders:
     image: assets/images/Bad-Goisern.jpg
     link: ''
     alt: Bad Goisern
-    gallery_sw: false
-    gallery: []
+    gallery_sw: true
+    gallery:
+    - title: No order
+      image: assets/images/outoforder-kunstkaufen.jpg
+      thumb: ''
+      alt: No order
+    - title: Doge
+      image: assets/images/dog.jpg
+      thumb: ''
+      alt: Doge
+    - title: Pug
+      image: assets/images/pug.jpg
+      thumb: ''
+      alt: Pug
   - title: SADoG Resultat
     image: assets/images/SADoG-Resultat.jpg
     link: ''
@@ -163,14 +175,6 @@ sliders:
     image: assets/images/saboteur.jpg
     link: ''
     alt: Saboteur
-    gallery_sw: false
-    gallery: []
-- label: aktiv_2
-  slide:
-  - title: Out
-    image: assets/images/outoforder-kunstkaufen.jpg
-    link: ''
-    alt: Out
     gallery_sw: false
     gallery: []
 
