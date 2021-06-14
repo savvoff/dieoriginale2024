@@ -68,7 +68,59 @@ galleries:
       image: "/assets/images/pug.jpg"
       thumb: "/assets/images/pug.jpg"
       alt: Pug
-sliders: []
+sliders:
+- slider:
+  - label: aktiv
+    data:
+    - test_multi: []
+      image: ''
+      link: ''
+      alt: ''
+      gallery: []
+      gallery_sw: false
+    slide:
+    - title: Bad Goisern
+      image: assets/images/Bad-Goisern.jpg
+      gallery_sw: false
+      gallery: []
+      alt: Bad Goisern
+      link: ''
+    - title: SADoG Resultat
+      image: assets/images/SADoG-Resultat.jpg
+      alt: SADoG Resultat
+      link: ''
+      gallery_sw: false
+      gallery: []
+    - title: Artculture
+      image: assets/images/artculture.jpg
+      alt: Artculture
+      link: ''
+      gallery_sw: false
+      gallery: []
+    - title: SADoG Aber
+      image: assets/images/SADoG-Aber.jpg
+      alt: SADoG Aber
+      link: ''
+      gallery_sw: false
+      gallery: []
+    - title: Copies & Limits
+      image: assets/images/limits.jpg
+      alt: Copies & Limits
+      link: ''
+      gallery_sw: false
+      gallery: []
+    - title: Fotostrecke 'Making of'
+      image: assets/images/Making_of.jpg
+      alt: Fotostrecke 'Making of'
+      link: ''
+      gallery_sw: false
+      gallery: []
+    - title: Saboteur
+      image: assets/images/saboteur.jpg
+      link: ''
+      alt: Saboteur
+      gallery_sw: false
+      gallery: []
 
 ---
 {%- if site.lang != site.languages[0] -%}

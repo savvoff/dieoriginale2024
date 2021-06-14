@@ -52,15 +52,15 @@ fields:
 - name: sliders
   type: field_group_list
   fields:
+  - name: label
+    type: text
+    config:
+      required: true
+    label: Label
   - name: slider
     type: field_group_list
     fields:
-    - name: label
-      type: text
-      config:
-        required: true
-      label: Label
-    - name: data
+    - name: slide
       type: field_group_list
       fields:
       - name: title
@@ -76,13 +76,16 @@ fields:
       - name: link
         type: text
         config:
-          required: true
+          required: false
         label: Link
       - name: alt
         type: text
         config:
           required: false
         label: Alt
+      - name: gallery_sw
+        type: boolean
+        label: Show gallery
       - name: gallery
         type: field_group_list
         fields:
@@ -114,11 +117,14 @@ fields:
           max: 
           labelField: 
         label: Gallery
+        showOnly:
+          field: gallery_sw
+          value: true
       config:
         min: 
         max: 
         labelField: 
-      label: Data
+      label: Slide
     config:
       min: 
       max: 
