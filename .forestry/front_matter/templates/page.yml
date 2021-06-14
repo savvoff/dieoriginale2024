@@ -68,10 +68,6 @@ fields:
         config:
           required: false
         label: Title
-      - name: test_multi
-        type: image_gallery
-        config: {}
-        label: test_multi
       - name: image
         type: file
         config:
