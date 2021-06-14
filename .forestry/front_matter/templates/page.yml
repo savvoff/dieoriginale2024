@@ -52,14 +52,14 @@ fields:
 - name: sliders
   type: field_group_list
   fields:
+  - name: label
+    type: text
+    config:
+      required: true
+    label: Label
   - name: slider
     type: field_group_list
     fields:
-    - name: label
-      type: text
-      config:
-        required: true
-      label: Label
     - name: slide
       type: field_group_list
       fields:
