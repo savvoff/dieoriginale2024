@@ -1,0 +1,68 @@
+---
+label: HOME
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: main_title
+  label: main_title
+- type: field_group
+  name: image
+  label: image
+  fields:
+  - type: text
+    name: path
+    label: path
+  - type: text
+    name: height
+    label: height
+  - type: text
+    name: width
+    label: width
+- type: field_group_list
+  name: sliders
+  label: sliders
+  fields:
+  - type: text
+    name: label
+    label: label
+  - type: text
+    name: type
+    label: type
+  - type: field_group_list
+    name: slide
+    label: slide
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: link
+      label: link
+    - type: text
+      name: alt
+      label: alt
+    - type: boolean
+      name: gallery_sw
+      label: gallery_sw
+    - type: field_group_list
+      name: gallery
+      label: gallery
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: file
+        name: image
+        label: image
+      - type: text
+        name: thumb
+        label: thumb
+      - type: text
+        name: alt
+        label: alt
