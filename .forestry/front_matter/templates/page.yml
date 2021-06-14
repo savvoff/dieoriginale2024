@@ -60,7 +60,7 @@ fields:
       config:
         required: true
       label: Label
-    - name: data
+    - name: slide
       type: field_group_list
       fields:
       - name: title
@@ -124,7 +124,7 @@ fields:
         min: 
         max: 
         labelField: 
-      label: Data
+      label: Slide
     config:
       min: 
       max: 
