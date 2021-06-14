@@ -12,8 +12,8 @@ permalink_en: "/activity/"
 languages:
 - en
 order: 4
-slider:
-  label: aktiv
+sliders:
+- label: aktiv
   slide:
   - title: Bad Goisern
     image: assets/images/Bad-Goisern.jpg
@@ -69,8 +69,7 @@ slider:
 ---
 {%- if site.lang != site.languages[0] -%}
   {% tf _pages/aktiv.md %}
-{%- else -%}
-  {{ page.slider }}
+{%- else -%}  
   <div align="center">
     <div class="page-col">
       <img class="is-small" src="{{ "/assets/images/pfote.png" | relative_url }}" alt="pfote">
@@ -121,7 +120,8 @@ slider:
       </p>
     </div>
     <br>
-    {%- include slider.html slides = page.slider.aktiv gallery = page.galleries.aktiv -%}  
+    {%- assign slider_1 =  page.sliders | where: 'label', 'aktiv' | map: 'slide' -%}
+    {%- include slider.html slides = slider_1 -%}  
   </div>
 
   <div class="is-light_bg" align="center">
