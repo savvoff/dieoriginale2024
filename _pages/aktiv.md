@@ -13,114 +13,6 @@ languages:
 - en
 order: 4
 slider:
-  aktiv:
-  - title: Bad Goisern
-    image: "/assets/images/Bad-Goisern.jpg"
-    link: 0
-    alt: Bad Goisern
-  - title: SADoG Resultat
-    image: "/assets/images/SADoG-Resultat.jpg"
-    link: 1
-    alt: SADoG Resultat
-  - title: Artculture
-    image: "/assets/images/artculture.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Artculture
-  - title: SADoG Aber
-    image: "/assets/images/SADoG-Aber.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: SADoG Aber
-  - title: Copies & Limits
-    image: "/assets/images/copies.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Copies & Limits
-  - title: Fotostrecke 'Making of'
-    image: "/assets/images/Making_of.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Fotostrecke 'Making of'
-  - title: Saboteur
-    image: "/assets/images/saboteur.jpg"
-    link: https://www.lightgalleryjs.com/demos/thumbnails/
-    alt: Saboteur
-galleries:
-  aktiv:
-  - id: 0
-    slides:
-    - title: Outoforder kunstkaufen
-      image: "/assets/images/outoforder-kunstkaufen.jpg"
-      thumb: "/assets/images/outoforder-kunstkaufen.jpg"
-      alt: Outoforder kunstkaufen
-    - title: Copies & Limits
-      image: "/assets/images/limits.jpg"
-      thumb: "/assets/images/limits.jpg"
-      alt: Copies & Limits
-  - id: 1
-    slides:
-    - title: Copies & Limits
-      image: "/assets/images/limits.jpg"
-      thumb: "/assets/images/limits.jpg"
-      alt: Copies & Limits
-    - title: Doge
-      image: "/assets/images/dog.jpg"
-      thumb: "/assets/images/dog.jpg"
-      alt: Doge
-    - title: Pug
-      image: "/assets/images/pug.jpg"
-      thumb: "/assets/images/pug.jpg"
-      alt: Pug
-sliders:
-- slider:
-  - label: aktiv
-    data:
-    - test_multi: []
-      image: ''
-      link: ''
-      alt: ''
-      gallery: []
-      gallery_sw: false
-    slide:
-    - title: Bad Goisern
-      image: assets/images/Bad-Goisern.jpg
-      gallery_sw: false
-      gallery: []
-      alt: Bad Goisern
-      link: ''
-    - title: SADoG Resultat
-      image: assets/images/SADoG-Resultat.jpg
-      alt: SADoG Resultat
-      link: ''
-      gallery_sw: false
-      gallery: []
-    - title: Artculture
-      image: assets/images/artculture.jpg
-      alt: Artculture
-      link: ''
-      gallery_sw: false
-      gallery: []
-    - title: SADoG Aber
-      image: assets/images/SADoG-Aber.jpg
-      alt: SADoG Aber
-      link: ''
-      gallery_sw: false
-      gallery: []
-    - title: Copies & Limits
-      image: assets/images/limits.jpg
-      alt: Copies & Limits
-      link: ''
-      gallery_sw: false
-      gallery: []
-    - title: Fotostrecke 'Making of'
-      image: assets/images/Making_of.jpg
-      alt: Fotostrecke 'Making of'
-      link: ''
-      gallery_sw: false
-      gallery: []
-    - title: Saboteur
-      image: assets/images/saboteur.jpg
-      link: ''
-      alt: Saboteur
-      gallery_sw: false
-      gallery: []
   label: aktiv
   slide:
   - title: Bad Goisern
@@ -170,6 +62,7 @@ sliders:
 {%- if site.lang != site.languages[0] -%}
   {% tf _pages/aktiv.md %}
 {%- else -%}
+  {{ page.slider }}
   <div align="center">
     <div class="page-col">
       <img class="is-small" src="{{ "/assets/images/pfote.png" | relative_url }}" alt="pfote">
