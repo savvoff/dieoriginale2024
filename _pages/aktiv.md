@@ -121,6 +121,7 @@ sliders:
       alt: Saboteur
       gallery_sw: false
       gallery: []
+  label: aktiv
 
 ---
 {%- if site.lang != site.languages[0] -%}
