@@ -69,6 +69,7 @@ sliders:
     alt: Saboteur
     gallery_sw: false
     gallery: []
+  type: carousel
 
 ---
 {%- if site.lang != site.languages[0] -%}
