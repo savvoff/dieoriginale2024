@@ -122,6 +122,49 @@ sliders:
       gallery_sw: false
       gallery: []
   label: aktiv
+  slide:
+  - title: Bad Goisern
+    image: assets/images/Bad-Goisern.jpg
+    link: ''
+    alt: Bad Goisern
+    gallery_sw: false
+    gallery: []
+  - title: SADoG Resultat
+    image: assets/images/SADoG-Resultat.jpg
+    link: ''
+    alt: SADoG Resultat
+    gallery_sw: false
+    gallery: []
+  - title: Artculture
+    image: assets/images/artculture.jpg
+    link: ''
+    alt: Artculture
+    gallery_sw: false
+    gallery: []
+  - title: SADoG Aber
+    image: assets/images/SADoG-Aber.jpg
+    link: ''
+    alt: SADoG Aber
+    gallery_sw: false
+    gallery: []
+  - title: Copies & Limits
+    image: assets/images/limits.jpg
+    link: ''
+    alt: Copies & Limits
+    gallery_sw: false
+    gallery: []
+  - title: Fotostrecke 'Making of'
+    image: assets/images/Making_of.jpg
+    link: ''
+    alt: Fotostrecke 'Making of'
+    gallery_sw: false
+    gallery: []
+  - title: Saboteur
+    image: assets/images/saboteur.jpg
+    link: ''
+    alt: Saboteur
+    gallery_sw: false
+    gallery: []
 
 ---
 {%- if site.lang != site.languages[0] -%}
