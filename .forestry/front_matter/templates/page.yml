@@ -147,3 +147,6 @@ fields:
   label: Sliders
 pages:
 - _pages/aktiv.md
+- _pages/diagnose.md
+- _pages/medial.md
+- _pages/sadog.md

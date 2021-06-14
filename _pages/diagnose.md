@@ -12,6 +12,7 @@ permalink_en: "/diagnosis/"
 languages:
 - en
 order: 3
+sliders: []
 
 ---
 {%- if site.lang != site.languages[0] -%}
