@@ -4,85 +4,135 @@ hide_body: false
 fields:
 - type: text
   name: layout
-  label: layout
+  label: Layout
+  hidden: false
+  config:
+    required: true
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: text
   name: t_title
   label: t_title
+  hidden: true
 - type: field_group
   name: image
-  label: image
+  label: OG Image
   fields:
-  - type: text
-    name: path
-    label: path
-  - type: text
-    name: height
-    label: height
+  - name: path
+    type: file
+    config:
+      maxSize: 3
+    label: image
   - type: text
     name: width
     label: width
+  - type: text
+    name: height
+    label: height
 - type: text
   name: namespace
-  label: namespace
+  label: Namespace
+  hidden: false
+  config:
+    required: true
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
+  config:
+    required: true
 - type: text
   name: permalink_en
-  label: permalink_en
+  label: Permalink Eng
 - type: list
   name: languages
-  label: languages
+  label: Languages
+- name: sliders
+  type: field_group_list
+  fields:
+  - name: slider
+    type: field_group_list
+    fields:
+    - name: label
+      type: text
+      config:
+        required: true
+      label: Label
+    - name: data
+      type: field_group_list
+      fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Title
+      - name: test_multi
+        type: image_gallery
+        config: {}
+        label: test_multi
+      - name: image
+        type: file
+        config:
+          maxSize: 3
+        label: Image
+      - name: link
+        type: text
+        config:
+          required: true
+        label: Link
+      - name: alt
+        type: text
+        config:
+          required: false
+        label: Alt
+      - name: gallery
+        type: field_group_list
+        fields:
+        - name: title
+          type: text
+          config:
+            required: false
+          label: Title text
+          description: Can be in a <strong>HTML</strong> syntax
+        - name: image
+          type: file
+          config:
+            maxSize: 3
+          label: Image
+        - name: thumb
+          type: file
+          config:
+            maxSize: 1
+          label: Thumb
+          description: optional
+        - name: alt
+          type: text
+          config:
+            required: false
+          label: Alt
+          default: ''
+        config:
+          min: 
+          max: 
+          labelField: 
+        label: Gallery
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Data
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Slider
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sliders
 - type: number
   name: order
   label: order
-- type: field_group
-  name: slider
-  label: slider
-  fields:
-  - type: field_group_list
-    name: medial
-    label: medial
-    fields:
-    - type: text
-      name: title
-      label: title
-    - type: file
-      name: image
-      label: image
-    - type: number
-      name: link
-      label: link
-    - type: text
-      name: alt
-      label: alt
-- type: field_group
-  name: galleries
-  label: galleries
-  fields:
-  - type: field_group_list
-    name: medial
-    label: medial
-    fields:
-    - type: number
-      name: id
-      label: id
-    - type: field_group_list
-      name: slides
-      label: slides
-      fields:
-      - type: text
-        name: title
-        label: title
-      - type: file
-        name: image
-        label: image
-      - type: file
-        name: thumb
-        label: thumb
-      - type: text
-        name: alt
-        label: alt
