@@ -165,6 +165,14 @@ sliders:
     alt: Saboteur
     gallery_sw: false
     gallery: []
+- label: aktiv_2
+  slide:
+  - title: Out
+    image: assets/images/outoforder-kunstkaufen.jpg
+    link: ''
+    alt: Out
+    gallery_sw: false
+    gallery: []
 
 ---
 {%- if site.lang != site.languages[0] -%}
