@@ -68,6 +68,7 @@ galleries:
       image: "/assets/images/pug.jpg"
       thumb: "/assets/images/pug.jpg"
       alt: Pug
+sliders: []
 
 ---
 {%- if site.lang != site.languages[0] -%}
