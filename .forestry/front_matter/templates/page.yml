@@ -49,6 +49,9 @@ fields:
 - type: list
   name: languages
   label: Languages
+- type: number
+  name: order
+  label: order
 - name: sliders
   type: field_group_list
   fields:
@@ -57,86 +60,76 @@ fields:
     config:
       required: true
     label: Label
-  - name: slider
+  - name: slide
     type: field_group_list
     fields:
-    - name: slide
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: image
+      type: file
+      config:
+        maxSize: 4
+      label: Image
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+      description: An external link (if needed)
+    - name: alt
+      type: text
+      config:
+        required: false
+      label: Alt
+    - name: gallery_sw
+      type: boolean
+      label: Show gallery
+    - name: gallery
       type: field_group_list
       fields:
       - name: title
         type: text
         config:
           required: false
-        label: Title
+        label: Title text
+        description: Could be in a <strong>HTML </strong>syntax
       - name: image
         type: file
         config:
-          maxSize: 3
+          maxSize: 4
         label: Image
-      - name: link
-        type: text
+      - name: thumb
+        type: file
         config:
-          required: false
-        label: Link
+          maxSize: 1
+        label: Thumb
+        description: optional
+        hidden: true
       - name: alt
         type: text
         config:
           required: false
         label: Alt
-      - name: gallery_sw
-        type: boolean
-        label: Show gallery
-      - name: gallery
-        type: field_group_list
-        fields:
-        - name: title
-          type: text
-          config:
-            required: false
-          label: Title text
-          description: Can be in a <strong>HTML</strong> syntax
-        - name: image
-          type: file
-          config:
-            maxSize: 3
-          label: Image
-        - name: thumb
-          type: file
-          config:
-            maxSize: 1
-          label: Thumb
-          description: optional
-        - name: alt
-          type: text
-          config:
-            required: false
-          label: Alt
-          default: ''
-        config:
-          min: 
-          max: 
-          labelField: 
-        label: Gallery
-        showOnly:
-          field: gallery_sw
-          value: true
       config:
         min: 
         max: 
         labelField: 
-      label: Slide
+      label: Gallery
+      showOnly:
+        field: gallery_sw
+        value: true
     config:
       min: 
       max: 
       labelField: 
-    label: Slider
+    label: Slide
   config:
     min: 
     max: 
     labelField: 
   label: Sliders
-- type: number
-  name: order
-  label: order
 pages:
 - _pages/aktiv.md
