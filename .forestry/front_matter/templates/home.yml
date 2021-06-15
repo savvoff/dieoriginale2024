@@ -59,6 +59,7 @@ fields:
     - type: text
       name: link
       label: Link
+      description: An external link (if needed)
     - type: text
       name: alt
       label: Alt
