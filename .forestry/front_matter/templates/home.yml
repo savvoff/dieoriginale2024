@@ -38,7 +38,7 @@ fields:
     config:
       required: true
       options:
-      - caruosel
+      - carousel
       - gallery
       source:
         type: simple
