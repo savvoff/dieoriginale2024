@@ -12,6 +12,7 @@
     </div>
   </div>  
   <div class="col-12">
-    {%- include slider.html slides = page.slider.home -%}
+    {%- assign slider_1 = page.sliders | where: 'label', 'home' -%}
+    {%- include slider.html slides = slider_1 -%}
   </div>
 </div>
