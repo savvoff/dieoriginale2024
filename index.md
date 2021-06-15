@@ -63,6 +63,7 @@ sliders:
     alt: Saboteur
     gallery_sw: false
     gallery: []
+
 ---
 {%- if site.lang != site.languages[0] -%}
   {% tf home.html %}
