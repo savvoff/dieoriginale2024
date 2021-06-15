@@ -4,65 +4,83 @@ hide_body: false
 fields:
 - type: text
   name: layout
-  label: layout
+  label: Layout
 - type: text
   name: main_title
-  label: main_title
+  label: Home title
 - type: field_group
   name: image
-  label: image
+  label: OG Image
   fields:
-  - type: text
-    name: path
-    label: path
-  - type: text
-    name: height
-    label: height
+  - name: path
+    type: file
+    config:
+      maxSize: 4
+    label: image
   - type: text
     name: width
     label: width
+  - type: text
+    name: height
+    label: height
 - type: field_group_list
   name: sliders
-  label: sliders
+  label: Sliders
   fields:
   - type: text
     name: label
-    label: label
-  - type: text
-    name: type
-    label: type
+    label: Label
+    config:
+      required: true
+  - name: type
+    type: select
+    default: caruosel
+    config:
+      required: true
+      options:
+      - caruosel
+      - gallery
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
   - type: field_group_list
     name: slide
-    label: slide
+    label: Slide
     fields:
     - type: text
       name: title
-      label: title
+      label: Title
     - type: file
       name: image
-      label: image
+      label: Image
     - type: text
       name: link
-      label: link
+      label: Link
     - type: text
       name: alt
-      label: alt
+      label: Alt
     - type: boolean
       name: gallery_sw
-      label: gallery_sw
+      label: Show gallery
     - type: field_group_list
       name: gallery
-      label: gallery
+      label: Gallery
       fields:
       - type: text
         name: title
-        label: title
+        label: Title
+        description: Can be in a <strong>HTML</strong> syntax
       - type: file
         name: image
-        label: image
+        label: Image
       - type: text
         name: thumb
-        label: thumb
+        label: Thumb
+        description: optional
+        hidden: true
       - type: text
         name: alt
-        label: alt
+        label: Alt
