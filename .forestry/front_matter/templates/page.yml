@@ -82,6 +82,16 @@ fields:
       config:
         required: false
       label: Title
+    - name: desc
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Description
+      description: optional
     - name: image
       type: file
       config:
@@ -109,7 +119,16 @@ fields:
         config:
           required: false
         label: Title text
-        description: Could be in a <strong>HTML </strong>syntax
+      - name: desc
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        label: Description
+        description: optional
       - name: image
         type: file
         config:
