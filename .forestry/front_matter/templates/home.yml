@@ -53,6 +53,16 @@ fields:
     - type: text
       name: title
       label: Title
+    - name: desc
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Description
+      description: optional
     - type: file
       name: image
       label: Image
@@ -73,7 +83,16 @@ fields:
       - type: text
         name: title
         label: Title
-        description: Can be in a <strong>HTML</strong> syntax
+      - name: desc
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        label: Description
+        description: optional
       - type: file
         name: image
         label: Image
