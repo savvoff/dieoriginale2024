@@ -46,8 +46,11 @@
     }
     figure {
       margin: 0 $spacer-lg $spacer-base;
-      background-color: $light;
-      @include sm(margin, auto);      
+      background-color: $light;  
+      @include to($break_lg) {
+        margin-left: 0;
+        margin-right: 0;
+      }   
       & > img {
         position: absolute;
       }

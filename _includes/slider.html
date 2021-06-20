@@ -6,7 +6,7 @@
     <ul class="splide__list"{% if type == 'carousel' %} data-gallery data-gallery-options='{"speed": 500}'{% endif %}>
       {%- for slide in slides -%}
       {%- for item in slide -%}
-      <li class="splide__slide" data-text="{{ item.title | escape }}"{% if type == 'carousel' %} data-src="{{ item.image | relative_url }}"{% endif %}>
+      <li class="splide__slide" data-text="{{ item.title | escape }}"{% if type == 'carousel' %} data-src="{{ item.image | relative_url }}" data-sub-html="{{ item.desc | replace: '"', ""}}"{% endif %}>
         {%- if item.link contains "http" -%}
         <a class="img-fit img-fit_contain" href="{{ item.link | uri_escape }}" target="_blank"
           rel="noopener noreferrer">
@@ -16,7 +16,7 @@
         {%- assign gallery_size = item.gallery | size -%}
         <div class="img-fit img-fit_contain"{% if type == 'gallery' and item.gallery_sw and gallery_size > 0 %} data-gallery='[
           {%- for slide in item.gallery -%}
-          {"subHtml": "{{ slide.title | replace: '"', ""}}", "src": "{{ slide.image | relative_url }}", "thumb": "{{
+          {"subHtml": "{{ slide.desc | default: slide.title | replace: '"', "" }}", "src": "{{ slide.image | relative_url }}", "thumb": "{{
           slide.thumb | default: slide.image | relative_url }}", "alt": "{{ slide.alt | default: slide.title | escape
           }}"}
           {%- if forloop.last != true -%}, {%- endif -%}

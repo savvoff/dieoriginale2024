@@ -64,27 +64,31 @@
       <div class="accordion-content">
         <div class="page-col">
           <br>
-          <div align="left">
-            <figure class="img-fit img-fit_contain ratio-1x1 is-medium is-float-left">
-              <img src="{{ "/assets/images/zweizeiler.png" | relative_url }}" alt="zweizeiler">
-            </figure>
-            <h5><strong>Mach (d)ein Kreuz für die Gegenkultur! </strong></h5>
-            <p>Überall dort, wo dir der offizielle Slogan "no copies*no limits" 
-              unterkommt.<br>
-              <br>
-              Eine satirische Initiative zum Mitgestalten durch gegenkulturelle 
-              Einflussnahme ... <br>
-              <br>
-              Dazu war ein Aufruf angedacht, dieses X als Foto, gerne auch mit den 
-              "Teilnehmern" darauf (als auch anonym) mit den nachfolgenden Tags in 
-              Umlauf zu bringen und Dr.SADoG zukommen zu lassen, der diese als 
-              umfassende Sammlung präsentiert. <br>
-              <br>
-              #nocopXs #nocopXsnolimits #nocops #nocopsnolimits #gegenkultur2024 
-              #kraftdergegenkultur #kunstfreiheit #gegenkulturimsalzkammergut #machmit <br>
-              <br>
-              Dies stellte aber womöglich strafrechtlich ein erhebliches Problem dar, 
-              weshalb Dr.SADoG sich von dieser Überlegung distanzierte .. </p>
+          <div class="row" align="left">
+            <div class="col-12 col-lg-5">
+              <figure class="img-fit img-fit_contain ratio-1x1 is-medium">
+                <img src="{{ "/assets/images/zweizeiler.png" | relative_url }}" alt="zweizeiler">
+              </figure>
+            </div>
+            <div class="col-12 col-lg-7">
+              <h5><strong>Mach (d)ein Kreuz für die Gegenkultur! </strong></h5>
+              <p>Überall dort, wo dir der offizielle Slogan "no copies*no limits" 
+                unterkommt.<br>
+                <br>
+                Eine satirische Initiative zum Mitgestalten durch gegenkulturelle 
+                Einflussnahme ... <br>
+                <br>
+                Dazu war ein Aufruf angedacht, dieses X als Foto, gerne auch mit den 
+                "Teilnehmern" darauf (als auch anonym) mit den nachfolgenden Tags in 
+                Umlauf zu bringen und Dr.SADoG zukommen zu lassen, der diese als 
+                umfassende Sammlung präsentiert. <br>
+                <br>
+                #nocopXs #nocopXsnolimits #nocops #nocopsnolimits #gegenkultur2024 
+                #kraftdergegenkultur #kunstfreiheit #gegenkulturimsalzkammergut #machmit <br>
+                <br>
+                Dies stellte aber womöglich strafrechtlich ein erhebliches Problem dar, 
+                weshalb Dr.SADoG sich von dieser Überlegung distanzierte .. </p>
+            </div>
           </div>
         </div>
       </div>    

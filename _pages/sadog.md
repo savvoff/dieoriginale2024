@@ -276,7 +276,7 @@ sliders:
   {%- assign slider_1 = page.sliders | where: 'label', 'sadog_1' -%}
   {%- include slider.html slides = slider_1 -%}
   <div class="page-col">
-    <br>
+    <br><br>
     <h3><strong>Fanartikel</strong></h3>
     <p>Womit man die Reichweite unterstützen, wie auch einen Teil zur Finanzierung der Initiative beitragen kann, werden mit freundlicher Unterstützung und jedem Verzicht auf Beteiligung vom <a href="http://" target="_blank" rel="noopener noreferrer">Skgt-Shop</a> angeboten und über diesen vertrieben.</p>
     <br>
@@ -284,7 +284,7 @@ sliders:
   {%- assign slider_2 = page.sliders | where: 'label', 'sadog_2' -%}
   {%- include slider.html slides = slider_2 -%}
   <div class="page-col">
-    <br>
+    <br><br>
     <h3><strong>Spenden + Sponsoren</strong></h3>
     <br> <br>
     <img class="is-small" src="{{ "/assets/images/munze.png" | relative_url }}" alt="munze">
