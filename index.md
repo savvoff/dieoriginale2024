@@ -19,50 +19,61 @@ sliders:
       image: assets/images/outoforder-kunstkaufen.jpg
       thumb: ''
       alt: No order
+      desc: <p><strong>No order </strong>with <a href="https://google.com" title=""
+        target="_blank">link</a></p>
     - title: Doge
       image: assets/images/dog.jpg
       thumb: ''
       alt: Doge
+      desc: "<p>multiline</p><p>test</p>"
     - title: Pug
       image: assets/images/pug.jpg
       thumb: ''
       alt: Pug
+      desc: ''
+    desc: "<p></p>"
   - title: SADoG Resultat
     image: assets/images/SADoG-Resultat.jpg
     link: ''
     alt: SADoG Resultat
     gallery_sw: false
     gallery: []
+    desc: ''
   - title: Artculture
     image: assets/images/artculture.jpg
     link: ''
     alt: Artculture
     gallery_sw: false
     gallery: []
+    desc: ''
   - title: SADoG Aber
     image: assets/images/SADoG-Aber.jpg
     link: ''
     alt: SADoG Aber
     gallery_sw: false
     gallery: []
+    desc: ''
   - title: Copies & Limits
     image: assets/images/limits.jpg
     link: ''
     alt: Copies & Limits
     gallery_sw: false
     gallery: []
+    desc: ''
   - title: Fotostrecke 'Making of'
     image: assets/images/Making_of.jpg
     link: ''
     alt: Fotostrecke 'Making of'
     gallery_sw: false
     gallery: []
+    desc: ''
   - title: Saboteur
     image: assets/images/saboteur.jpg
     link: ''
     alt: Saboteur
     gallery_sw: false
     gallery: []
+    desc: ''
 
 ---
 {%- if site.lang != site.languages[0] -%}
